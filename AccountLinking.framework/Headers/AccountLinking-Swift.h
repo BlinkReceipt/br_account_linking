@@ -279,6 +279,7 @@ SWIFT_CLASS("_TtC14AccountLinking27AuthorizationViewController")
 @end
 
 typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
+  RetailerUnittest = -100,
   RetailerTarget = 1,
   RetailerKroger = 6,
   RetailerPublix = 7,
@@ -573,6 +574,7 @@ SWIFT_CLASS("_TtC14AccountLinking27AuthorizationViewController")
 @end
 
 typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
+  RetailerUnittest = -100,
   RetailerTarget = 1,
   RetailerKroger = 6,
   RetailerPublix = 7,
@@ -870,6 +872,7 @@ SWIFT_CLASS("_TtC14AccountLinking27AuthorizationViewController")
 @end
 
 typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
+  RetailerUnittest = -100,
   RetailerTarget = 1,
   RetailerKroger = 6,
   RetailerPublix = 7,
@@ -1164,6 +1167,7 @@ SWIFT_CLASS("_TtC14AccountLinking27AuthorizationViewController")
 @end
 
 typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
+  RetailerUnittest = -100,
   RetailerTarget = 1,
   RetailerKroger = 6,
   RetailerPublix = 7,
