@@ -220,6 +220,7 @@ SWIFT_CLASS("_TtC14AccountLinking7Account")
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
+enum AccountLinkingViewMode : NSInteger;
 @class UIViewController;
 @class NSError;
 
@@ -232,6 +233,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic, copy) void (^ _Nullable analytics)(id _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable logMessage)(NSString * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable displayDebugView)(id _Nullable);
+@property (nonatomic) enum AccountLinkingViewMode viewMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 /// Reset the stored history of orders for provided retailer
@@ -247,7 +249,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 /// </ul>
 /// \param account A user <code>Account</code> object
 ///
-/// \param inputView A web view that can be added to the view hierarchy for debug purposes. May be used fot 2FA or other user verification input down the road
+/// \param completion A callback to get results or provide additional user input if required
 ///
 - (void)verifyAccount:(Account * _Nonnull)account completion:(void (^ _Nonnull)(UIViewController * _Nullable, NSError * _Nullable))completion;
 /// It fetches new orders for the specific time range for a retailer
@@ -259,14 +261,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 /// </ul>
 /// \param account A user <code>Account</code> object
 ///
-/// \param dayCutoff Days in the past from currnet day.
+/// \param dayCutoff Epox timestamp in seconds in the past from currnet day.
 ///
-/// \param inputView A web view that can be added to the view hierarchy for debug purposes. May be used fot 2FA or other user verification input down the road
+/// \param completion A callback to get results or provide additional user input if required
 ///
-- (void)grabNewOrders:(Account * _Nonnull)account dayCutoff:(NSInteger)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, UIViewController * _Nullable, NSError * _Nullable))completion;
+- (void)grabNewOrders:(Account * _Nonnull)account dayCutoff:(double)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, UIViewController * _Nullable, NSError * _Nullable))completion;
 @end
 
 
+
+typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, closed) {
+  AccountLinkingViewModeAutomatic = -100,
+  AccountLinkingViewModeUserAuth = 1,
+};
 
 @class NSCoder;
 @class NSBundle;
@@ -286,8 +293,10 @@ typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
   RetailerWalgreens = 10,
   RetailerWalmart = 11,
   RetailerWegmans = 52,
+  RetailerStarbucks = 6677,
   RetailerInstacart = 8652,
   RetailerWalmartGrocery = 8897,
+  RetailerShipt = 9016,
 };
 
 #if __has_attribute(external_source_symbol)
@@ -515,6 +524,7 @@ SWIFT_CLASS("_TtC14AccountLinking7Account")
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
+enum AccountLinkingViewMode : NSInteger;
 @class UIViewController;
 @class NSError;
 
@@ -527,6 +537,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic, copy) void (^ _Nullable analytics)(id _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable logMessage)(NSString * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable displayDebugView)(id _Nullable);
+@property (nonatomic) enum AccountLinkingViewMode viewMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 /// Reset the stored history of orders for provided retailer
@@ -542,7 +553,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 /// </ul>
 /// \param account A user <code>Account</code> object
 ///
-/// \param inputView A web view that can be added to the view hierarchy for debug purposes. May be used fot 2FA or other user verification input down the road
+/// \param completion A callback to get results or provide additional user input if required
 ///
 - (void)verifyAccount:(Account * _Nonnull)account completion:(void (^ _Nonnull)(UIViewController * _Nullable, NSError * _Nullable))completion;
 /// It fetches new orders for the specific time range for a retailer
@@ -554,14 +565,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 /// </ul>
 /// \param account A user <code>Account</code> object
 ///
-/// \param dayCutoff Days in the past from currnet day.
+/// \param dayCutoff Epox timestamp in seconds in the past from currnet day.
 ///
-/// \param inputView A web view that can be added to the view hierarchy for debug purposes. May be used fot 2FA or other user verification input down the road
+/// \param completion A callback to get results or provide additional user input if required
 ///
-- (void)grabNewOrders:(Account * _Nonnull)account dayCutoff:(NSInteger)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, UIViewController * _Nullable, NSError * _Nullable))completion;
+- (void)grabNewOrders:(Account * _Nonnull)account dayCutoff:(double)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, UIViewController * _Nullable, NSError * _Nullable))completion;
 @end
 
 
+
+typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, closed) {
+  AccountLinkingViewModeAutomatic = -100,
+  AccountLinkingViewModeUserAuth = 1,
+};
 
 @class NSCoder;
 @class NSBundle;
@@ -581,8 +597,10 @@ typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
   RetailerWalgreens = 10,
   RetailerWalmart = 11,
   RetailerWegmans = 52,
+  RetailerStarbucks = 6677,
   RetailerInstacart = 8652,
   RetailerWalmartGrocery = 8897,
+  RetailerShipt = 9016,
 };
 
 #if __has_attribute(external_source_symbol)
@@ -813,6 +831,7 @@ SWIFT_CLASS("_TtC14AccountLinking7Account")
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
+enum AccountLinkingViewMode : NSInteger;
 @class UIViewController;
 @class NSError;
 
@@ -825,6 +844,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic, copy) void (^ _Nullable analytics)(id _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable logMessage)(NSString * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable displayDebugView)(id _Nullable);
+@property (nonatomic) enum AccountLinkingViewMode viewMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 /// Reset the stored history of orders for provided retailer
@@ -840,7 +860,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 /// </ul>
 /// \param account A user <code>Account</code> object
 ///
-/// \param inputView A web view that can be added to the view hierarchy for debug purposes. May be used fot 2FA or other user verification input down the road
+/// \param completion A callback to get results or provide additional user input if required
 ///
 - (void)verifyAccount:(Account * _Nonnull)account completion:(void (^ _Nonnull)(UIViewController * _Nullable, NSError * _Nullable))completion;
 /// It fetches new orders for the specific time range for a retailer
@@ -852,14 +872,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 /// </ul>
 /// \param account A user <code>Account</code> object
 ///
-/// \param dayCutoff Days in the past from currnet day.
+/// \param dayCutoff Epox timestamp in seconds in the past from currnet day.
 ///
-/// \param inputView A web view that can be added to the view hierarchy for debug purposes. May be used fot 2FA or other user verification input down the road
+/// \param completion A callback to get results or provide additional user input if required
 ///
-- (void)grabNewOrders:(Account * _Nonnull)account dayCutoff:(NSInteger)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, UIViewController * _Nullable, NSError * _Nullable))completion;
+- (void)grabNewOrders:(Account * _Nonnull)account dayCutoff:(double)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, UIViewController * _Nullable, NSError * _Nullable))completion;
 @end
 
 
+
+typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, closed) {
+  AccountLinkingViewModeAutomatic = -100,
+  AccountLinkingViewModeUserAuth = 1,
+};
 
 @class NSCoder;
 @class NSBundle;
@@ -879,8 +904,10 @@ typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
   RetailerWalgreens = 10,
   RetailerWalmart = 11,
   RetailerWegmans = 52,
+  RetailerStarbucks = 6677,
   RetailerInstacart = 8652,
   RetailerWalmartGrocery = 8897,
+  RetailerShipt = 9016,
 };
 
 #if __has_attribute(external_source_symbol)
@@ -1108,6 +1135,7 @@ SWIFT_CLASS("_TtC14AccountLinking7Account")
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
+enum AccountLinkingViewMode : NSInteger;
 @class UIViewController;
 @class NSError;
 
@@ -1120,6 +1148,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic, copy) void (^ _Nullable analytics)(id _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable logMessage)(NSString * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable displayDebugView)(id _Nullable);
+@property (nonatomic) enum AccountLinkingViewMode viewMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 /// Reset the stored history of orders for provided retailer
@@ -1135,7 +1164,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 /// </ul>
 /// \param account A user <code>Account</code> object
 ///
-/// \param inputView A web view that can be added to the view hierarchy for debug purposes. May be used fot 2FA or other user verification input down the road
+/// \param completion A callback to get results or provide additional user input if required
 ///
 - (void)verifyAccount:(Account * _Nonnull)account completion:(void (^ _Nonnull)(UIViewController * _Nullable, NSError * _Nullable))completion;
 /// It fetches new orders for the specific time range for a retailer
@@ -1147,14 +1176,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 /// </ul>
 /// \param account A user <code>Account</code> object
 ///
-/// \param dayCutoff Days in the past from currnet day.
+/// \param dayCutoff Epox timestamp in seconds in the past from currnet day.
 ///
-/// \param inputView A web view that can be added to the view hierarchy for debug purposes. May be used fot 2FA or other user verification input down the road
+/// \param completion A callback to get results or provide additional user input if required
 ///
-- (void)grabNewOrders:(Account * _Nonnull)account dayCutoff:(NSInteger)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, UIViewController * _Nullable, NSError * _Nullable))completion;
+- (void)grabNewOrders:(Account * _Nonnull)account dayCutoff:(double)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, UIViewController * _Nullable, NSError * _Nullable))completion;
 @end
 
 
+
+typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, closed) {
+  AccountLinkingViewModeAutomatic = -100,
+  AccountLinkingViewModeUserAuth = 1,
+};
 
 @class NSCoder;
 @class NSBundle;
@@ -1174,8 +1208,10 @@ typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
   RetailerWalgreens = 10,
   RetailerWalmart = 11,
   RetailerWegmans = 52,
+  RetailerStarbucks = 6677,
   RetailerInstacart = 8652,
   RetailerWalmartGrocery = 8897,
+  RetailerShipt = 9016,
 };
 
 #if __has_attribute(external_source_symbol)
