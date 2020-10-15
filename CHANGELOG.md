@@ -1,5 +1,19 @@
 ﻿# Change Log
 
+## [1.1.1](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.1.1) (10/15/2020)
+
+#### Updated
+* Min iOS version >= 10.0
+
+
+#### Fixed
+* `Publix` 
+    * Failing to authenticate with valid credentials
+* `Target`
+    * Successful return with empty list if no orders are found
+
+
+---
 ## [1.1.0](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.1.0) (10/12/2020)
 #### Added
 * `Instacart`
@@ -29,6 +43,7 @@
 * `VerifyAccount` action doesn't return response some time when 2FA or captcha is enabled
 * OTA update so only newer versions are accepted  
 
+---
 ## [1.0.2](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.0.2) (08/11/2020)
 
 ---
