@@ -15,4 +15,7 @@ Pod::Spec.new do |s|
     This is an extension for the BlinkReceipt SDK
   DESC
 
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
 end
