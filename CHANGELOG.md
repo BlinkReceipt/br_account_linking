@@ -1,5 +1,12 @@
 ﻿# Change Log
 
+## [1.1.2](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.1.2) (11/04/2020)
+
+#### Updated
+* Product Intelligence improvements
+
+
+---
 ## [1.1.1](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.1.1) (10/15/2020)
 
 #### Updated
