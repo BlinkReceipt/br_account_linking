@@ -1,6 +1,39 @@
 ﻿# Change Log
 
-## [1.1.3](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.1.0) (02/04/2021)
+## [1.2.1](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.2.1) (03/06/2021)
+#### Added
+* Add DoorDash support
+* Add Dollar General support
+* Add Sam's Club support
+* Add Food Lion support
+* Add Domino's Pizza support
+* Add Family Dollar support
+* Add Dollar Tree support
+* Add Dick's Sporting Goods support
+* Add TJ Maxx support
+* Add Marshalls support
+* Add Giant Eagle support
+* Add Nike support
+* Add HyVee support
+* Add H-E-B support
+* Add Bed Bath & Beyond support
+* Add BJ's Wholesale Club support
+* Add Rite Aid support
+
+#### Fixed
+* `Lowe's`
+    * Authentication bugfixes and improvements
+    * In-Store orders support
+* `Best Buy`, `Starbucks`, `Walgreens`
+    * Authentication bugfixes and improvements
+* `CVS`
+    * Returning incorrect orders sometime
+    * Randomly failing to authenticate
+* `Walmart`
+    * Improved parsing on cash orders
+
+---
+## [1.1.3](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.1.3) (02/04/2021)
 #### Added
 * Add HomeDepot support (Online orders only)
 * Add Costco support

@@ -239,6 +239,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic) enum AccountLinkingViewMode viewMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+/// Clears all cache reletad to a specific retailer
+/// \param retailer A retailer for which to remove the cache
+///
+/// \param completion A callback when all cache is cleared
+///
+- (void)clearCache:(enum Retailer)retailer completion:(void (^ _Nonnull)(void))completion;
 /// Reset the stored history of orders for provided retailer
 /// \param retailer A retailer for which to remove the cached orders
 ///
@@ -276,7 +282,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @end
 
 
-typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, closed) {
+typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, open) {
   AccountLinkingViewModeAutomatic = -100,
   AccountLinkingViewModeUserAuth = 1,
 };
@@ -291,11 +297,14 @@ SWIFT_CLASS("_TtC14AccountLinking27AuthorizationViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
-typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
+typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerTarget = 1,
   RetailerCostco = 2,
   RetailerCvs = 3,
+  RetailerDollarGeneral = 4,
+  RetailerDollarTree = 5,
   RetailerKroger = 6,
+  RetailerSamsClub = 9,
   RetailerPublix = 7,
   RetailerWalgreens = 10,
   RetailerWalmart = 11,
@@ -304,17 +313,32 @@ typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
   RetailerLowes = 16,
   RetailerMeijer = 19,
   RetailerShopRite = 22,
+  RetailerHeb = 44,
+  RetailerBjsWholesale = 45,
   RetailerWegmans = 52,
+  RetailerHyVee = 56,
+  RetailerRiteAid = 143,
+  RetailerGiantEagle = 144,
+  RetailerFoodLion = 142,
+  RetailerFamilyDollar = 165,
   RetailerSephora = 171,
   RetailerBestBuy = 177,
+  RetailerMarshalls = 5917,
+  RetailerTjMaxx = 5921,
   RetailerKohls = 5929,
+  RetailerBedBathAndBeyond = 6074,
+  RetailerDicksSportingGoods = 6162,
   RetailerMacys = 6802,
   RetailerStarbucks = 6677,
+  RetailerDominosPizza = 8366,
+  RetailerTacoBell = 8598,
   RetailerInstacart = 8652,
+  RetailerNike = 8712,
   RetailerWalmartGrocery = 8897,
   RetailerShipt = 9016,
   RetailerChewy = 9947,
   RetailerGrubhub = 10208,
+  RetailerDoordash = 10241,
 };
 
 #if __has_attribute(external_source_symbol)
@@ -562,6 +586,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic) enum AccountLinkingViewMode viewMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+/// Clears all cache reletad to a specific retailer
+/// \param retailer A retailer for which to remove the cache
+///
+/// \param completion A callback when all cache is cleared
+///
+- (void)clearCache:(enum Retailer)retailer completion:(void (^ _Nonnull)(void))completion;
 /// Reset the stored history of orders for provided retailer
 /// \param retailer A retailer for which to remove the cached orders
 ///
@@ -599,7 +629,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @end
 
 
-typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, closed) {
+typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, open) {
   AccountLinkingViewModeAutomatic = -100,
   AccountLinkingViewModeUserAuth = 1,
 };
@@ -614,11 +644,14 @@ SWIFT_CLASS("_TtC14AccountLinking27AuthorizationViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
-typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
+typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerTarget = 1,
   RetailerCostco = 2,
   RetailerCvs = 3,
+  RetailerDollarGeneral = 4,
+  RetailerDollarTree = 5,
   RetailerKroger = 6,
+  RetailerSamsClub = 9,
   RetailerPublix = 7,
   RetailerWalgreens = 10,
   RetailerWalmart = 11,
@@ -627,17 +660,32 @@ typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
   RetailerLowes = 16,
   RetailerMeijer = 19,
   RetailerShopRite = 22,
+  RetailerHeb = 44,
+  RetailerBjsWholesale = 45,
   RetailerWegmans = 52,
+  RetailerHyVee = 56,
+  RetailerRiteAid = 143,
+  RetailerGiantEagle = 144,
+  RetailerFoodLion = 142,
+  RetailerFamilyDollar = 165,
   RetailerSephora = 171,
   RetailerBestBuy = 177,
+  RetailerMarshalls = 5917,
+  RetailerTjMaxx = 5921,
   RetailerKohls = 5929,
+  RetailerBedBathAndBeyond = 6074,
+  RetailerDicksSportingGoods = 6162,
   RetailerMacys = 6802,
   RetailerStarbucks = 6677,
+  RetailerDominosPizza = 8366,
+  RetailerTacoBell = 8598,
   RetailerInstacart = 8652,
+  RetailerNike = 8712,
   RetailerWalmartGrocery = 8897,
   RetailerShipt = 9016,
   RetailerChewy = 9947,
   RetailerGrubhub = 10208,
+  RetailerDoordash = 10241,
 };
 
 #if __has_attribute(external_source_symbol)
@@ -888,6 +936,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic) enum AccountLinkingViewMode viewMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+/// Clears all cache reletad to a specific retailer
+/// \param retailer A retailer for which to remove the cache
+///
+/// \param completion A callback when all cache is cleared
+///
+- (void)clearCache:(enum Retailer)retailer completion:(void (^ _Nonnull)(void))completion;
 /// Reset the stored history of orders for provided retailer
 /// \param retailer A retailer for which to remove the cached orders
 ///
@@ -925,7 +979,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @end
 
 
-typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, closed) {
+typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, open) {
   AccountLinkingViewModeAutomatic = -100,
   AccountLinkingViewModeUserAuth = 1,
 };
@@ -940,11 +994,14 @@ SWIFT_CLASS("_TtC14AccountLinking27AuthorizationViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
-typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
+typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerTarget = 1,
   RetailerCostco = 2,
   RetailerCvs = 3,
+  RetailerDollarGeneral = 4,
+  RetailerDollarTree = 5,
   RetailerKroger = 6,
+  RetailerSamsClub = 9,
   RetailerPublix = 7,
   RetailerWalgreens = 10,
   RetailerWalmart = 11,
@@ -953,17 +1010,32 @@ typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
   RetailerLowes = 16,
   RetailerMeijer = 19,
   RetailerShopRite = 22,
+  RetailerHeb = 44,
+  RetailerBjsWholesale = 45,
   RetailerWegmans = 52,
+  RetailerHyVee = 56,
+  RetailerRiteAid = 143,
+  RetailerGiantEagle = 144,
+  RetailerFoodLion = 142,
+  RetailerFamilyDollar = 165,
   RetailerSephora = 171,
   RetailerBestBuy = 177,
+  RetailerMarshalls = 5917,
+  RetailerTjMaxx = 5921,
   RetailerKohls = 5929,
+  RetailerBedBathAndBeyond = 6074,
+  RetailerDicksSportingGoods = 6162,
   RetailerMacys = 6802,
   RetailerStarbucks = 6677,
+  RetailerDominosPizza = 8366,
+  RetailerTacoBell = 8598,
   RetailerInstacart = 8652,
+  RetailerNike = 8712,
   RetailerWalmartGrocery = 8897,
   RetailerShipt = 9016,
   RetailerChewy = 9947,
   RetailerGrubhub = 10208,
+  RetailerDoordash = 10241,
 };
 
 #if __has_attribute(external_source_symbol)
@@ -1211,6 +1283,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic) enum AccountLinkingViewMode viewMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+/// Clears all cache reletad to a specific retailer
+/// \param retailer A retailer for which to remove the cache
+///
+/// \param completion A callback when all cache is cleared
+///
+- (void)clearCache:(enum Retailer)retailer completion:(void (^ _Nonnull)(void))completion;
 /// Reset the stored history of orders for provided retailer
 /// \param retailer A retailer for which to remove the cached orders
 ///
@@ -1248,7 +1326,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @end
 
 
-typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, closed) {
+typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, open) {
   AccountLinkingViewModeAutomatic = -100,
   AccountLinkingViewModeUserAuth = 1,
 };
@@ -1263,11 +1341,14 @@ SWIFT_CLASS("_TtC14AccountLinking27AuthorizationViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
-typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
+typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerTarget = 1,
   RetailerCostco = 2,
   RetailerCvs = 3,
+  RetailerDollarGeneral = 4,
+  RetailerDollarTree = 5,
   RetailerKroger = 6,
+  RetailerSamsClub = 9,
   RetailerPublix = 7,
   RetailerWalgreens = 10,
   RetailerWalmart = 11,
@@ -1276,17 +1357,32 @@ typedef SWIFT_ENUM(NSInteger, Retailer, closed) {
   RetailerLowes = 16,
   RetailerMeijer = 19,
   RetailerShopRite = 22,
+  RetailerHeb = 44,
+  RetailerBjsWholesale = 45,
   RetailerWegmans = 52,
+  RetailerHyVee = 56,
+  RetailerRiteAid = 143,
+  RetailerGiantEagle = 144,
+  RetailerFoodLion = 142,
+  RetailerFamilyDollar = 165,
   RetailerSephora = 171,
   RetailerBestBuy = 177,
+  RetailerMarshalls = 5917,
+  RetailerTjMaxx = 5921,
   RetailerKohls = 5929,
+  RetailerBedBathAndBeyond = 6074,
+  RetailerDicksSportingGoods = 6162,
   RetailerMacys = 6802,
   RetailerStarbucks = 6677,
+  RetailerDominosPizza = 8366,
+  RetailerTacoBell = 8598,
   RetailerInstacart = 8652,
+  RetailerNike = 8712,
   RetailerWalmartGrocery = 8897,
   RetailerShipt = 9016,
   RetailerChewy = 9947,
   RetailerGrubhub = 10208,
+  RetailerDoordash = 10241,
 };
 
 #if __has_attribute(external_source_symbol)
