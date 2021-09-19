@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 effective-4.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4.2 effective-4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name AccountLinking
 @_exported import AccountLinking
 import CommonCrypto
@@ -9,8 +9,8 @@ import WebKit
 @objc public enum AccountLinkingViewMode : Swift.Int {
   case automatic = -100
   case userAuth = 1
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -52,13 +52,12 @@ import WebKit
   case tacoBell = 8598
   case instacart = 8652
   case nike = 8712
-  case walmartGrocery = 8897
   case shipt = 9016
   case chewy = 9947
   case grubhub = 10208
   case doordash = 10241
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -68,8 +67,8 @@ import WebKit
   @objc public var username: Swift.String
   @objc public var password: Swift.String
   @objc public init(retailer: AccountLinking.Retailer, username: Swift.String, password: Swift.String)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AccountLinkingManager : ObjectiveC.NSObject {
   @objc public var identifier: Swift.String?

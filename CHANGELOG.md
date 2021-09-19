@@ -1,5 +1,53 @@
 ﻿# Change Log
 
+## 1.2.7
+
+#### Added
+* `Giant Eagle`
+    * Add Captcha support 
+* `DoorDash`
+    * Add 2FA support
+
+#### Fixed
+* `BJ's Wholesale Club`
+    * Returns an empty orders list randomly
+* `Bed Bath & Beyond`
+    * 2FA bug fixes
+* `Chewy`, `Domino's Pizza`, `Target`, `Shipt`, `Macy's`, `Nike`, `Instacart`
+    * Fix user authentication
+* `Dollar Tree`, `Giant Eagle`, `Walmart`, `Starbucks`
+    * Retuns no orders
+* `ShopRite`
+    * Fix order total price
+* `Meijer`
+    * Overall bug fixes and improvements
+
+### Removed
+* `Walmart Grocery`
+
+---
+## 1.2.6
+
+#### Added
+* Improved analytics
+
+#### Fixed
+* OTA updates
+* Using backward compatible APIs to support older Android versions
+* `Lowe's`
+    * Parsing orders improvements
+* `Costco`
+    * Returns no orders
+* `GrubHub`
+    * Returns no orders randomly
+* `Shipt`
+    * Retuns no orders
+* `Staples`
+    * User authentication fails
+* `Shipt`
+    * Add Android support
+
+--
 ## [1.2.1](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.2.1) (03/06/2021)
 #### Added
 * Add DoorDash support
