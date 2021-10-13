@@ -1,5 +1,21 @@
-﻿# Change Log
+# Change Log
 
+## 1.2.9
+
+#### Add
+* `Walmart`
+    * In-Store orders support
+* `Target`
+    * Add 2FA support
+
+---
+## 1.2.8
+
+#### Fixed
+* `Walmart`
+    * verify account fixed
+
+---
 ## 1.2.7
 
 #### Added
@@ -47,8 +63,30 @@
 * `Shipt`
     * Add Android support
 
---
-## [1.2.1](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.2.1) (03/06/2021)
+
+---
+## 1.2.2
+
+
+#### Fixed
+* OTA updates
+* Shipt `unitPrice` returning NaN some time
+
+
+
+---
+## 1.2.1
+
+
+#### Added
+* Add XCFramework support
+
+
+
+---
+## 1.2.0
+
+
 #### Added
 * Add DoorDash support
 * Add Dollar General support
@@ -70,19 +108,24 @@
 
 #### Fixed
 * `Lowe's`
-    * Authentication bugfixes and improvements
+    * Authentication issues
     * In-Store orders support
 * `Best Buy`, `Starbucks`, `Walgreens`
-    * Authentication bugfixes and improvements
+    * Fails to authenticate user sometime
 * `CVS`
-    * Returning incorrect orders sometime
-    * Randomly failing to authenticate
+    * Returning incorrect orders data sometime
+    * Failing to authenticate user randomly
 * `Walmart`
     * Improved parsing on cash orders
 
+
+
 ---
-## [1.1.3](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.1.3) (02/04/2021)
+## 1.1.3
+
+
 #### Added
+* Android support
 * Add HomeDepot support (Online orders only)
 * Add Costco support
 * Add Meijer support
@@ -110,18 +153,23 @@
 * `Walgreens`
     * Fetching orders bug fixes
 
+
 #### Updated
-* Speed improvements and general optimizations 
+* Speed improvements and general optimizations
+
+
 
 ---
-## [1.1.2](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.1.2) (11/04/2020)
+## 1.1.2
+
 
 #### Updated
 * Product Intelligence improvements
 
 
 ---
-## [1.1.1](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.1.1) (10/15/2020)
+## 1.1.1
+
 
 #### Updated
 * Min iOS version >= 10.0
@@ -133,9 +181,10 @@
 * `Target`
     * Successful return with empty list if no orders are found
 
-
+    
 ---
-## [1.1.0](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.1.0) (10/12/2020)
+## 1.1.0
+
 #### Added
 * `Instacart`
     * Captcha support when authenticating
@@ -164,9 +213,7 @@
 * `VerifyAccount` action doesn't return response some time when 2FA or captcha is enabled
 * OTA update so only newer versions are accepted  
 
----
-## [1.0.2](https://github.com/BlinkReceipt/br_account_linking/releases/tag/1.0.2) (08/11/2020)
 
 ---
-## [0.0.1](https://github.com/BlinkReceipt/br_account_linking/releases/tag/0.0.1)
-- Initial release
+## [1.0.0](https://github.com/BlinkReceipt/account_linking/releases/tag/v1.0.0) (07/14/2020)
+
