@@ -1,5 +1,26 @@
 # Change Log
 
+## 2.0.0
+
+#### Add
+* `Staples Canada`
+* return `sessionId` for each action
+* Swift 5 support
+
+#### Fixed
+* `BJ's Wholesale Club`, `Food Lion`, `Dollar Tree`, `Bed Bath & Beyond`, `Costco`, `Home Depot`
+    * User authentication improvements
+* `DoorDash`, `Lowe's`, `Dollar General`
+    * Orders parsing improvements
+
+---
+## 1.3.0
+
+#### Fixed
+* `Target`
+    * Missing order date
+
+---
 ## 1.2.9
 
 #### Add

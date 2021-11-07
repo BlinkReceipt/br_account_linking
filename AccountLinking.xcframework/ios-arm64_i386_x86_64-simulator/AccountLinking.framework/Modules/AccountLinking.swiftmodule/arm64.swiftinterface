@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 effective-4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
-// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name AccountLinking
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AccountLinking
 @_exported import AccountLinking
 import CommonCrypto
 import Swift
 import UIKit
 import WebKit
+import _Concurrency
 @objc public enum AccountLinkingViewMode : Swift.Int {
   case automatic = -100
   case userAuth = 1
@@ -41,10 +42,12 @@ import WebKit
   case familyDollar = 165
   case sephora = 171
   case bestBuy = 177
+  case walmartCA = 5849
   case marshalls = 5917
   case tjMaxx = 5921
   case kohls = 5929
   case bedBathAndBeyond = 6074
+  case staplesCA = 6127
   case dicksSportingGoods = 6162
   case macys = 6802
   case starbucks = 6677
@@ -54,8 +57,10 @@ import WebKit
   case nike = 8712
   case shipt = 9016
   case chewy = 9947
+  case seamless = 10068
   case grubhub = 10208
   case doordash = 10241
+  case drizly = 10934
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -67,28 +72,26 @@ import WebKit
   @objc public var username: Swift.String
   @objc public var password: Swift.String
   @objc public init(retailer: AccountLinking.Retailer, username: Swift.String, password: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AccountLinkingManager : ObjectiveC.NSObject {
   @objc public var identifier: Swift.String?
   @objc public var identifier1: Swift.String?
   @objc public static let shared: AccountLinking.AccountLinkingManager
-  @objc public var analytics: ((Any) -> Swift.Void)?
-  @objc public var logMessage: ((Swift.String) -> Swift.Void)?
-  @objc public var displayDebugView: ((Any?) -> Swift.Void)?
+  @objc public var analytics: ((_ event: Any) -> Swift.Void)?
+  @objc public var logMessage: ((_ message: Swift.String) -> Swift.Void)?
+  @objc public var displayDebugView: ((_ view: Any?) -> Swift.Void)?
   @objc public var viewMode: AccountLinking.AccountLinkingViewMode
   @objc public func clearCache(_ retailer: AccountLinking.Retailer, completion: @escaping () -> Swift.Void)
   @objc public func resetOrdersHistoryForRetailer(_ retailer: AccountLinking.Retailer)
   @objc public func updateConfiguration(_ data: Foundation.Data)
-  @objc public func verifyAccount(_ account: AccountLinking.Account, completion: @escaping (UIKit.UIViewController?, Foundation.NSError?) -> Swift.Void)
-  @objc public func grabNewOrders(_ account: AccountLinking.Account, dayCutoff: Swift.Double, completion: @escaping ([[Swift.AnyHashable : Any]], Swift.Int, UIKit.UIViewController?, Foundation.NSError?) -> Swift.Void)
+  @objc public func verifyAccount(_ account: AccountLinking.Account, completion: @escaping (_ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void)
+  @objc public func grabNewOrders(_ account: AccountLinking.Account, dayCutoff: Swift.Double, completion: @escaping (_ orders: [[Swift.AnyHashable : Any]], _ remaining: Swift.Int, _ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc public class AuthorizationViewController : UIKit.UIViewController {
-  @objc override dynamic public func viewDidLoad()
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class AuthorizationViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
 }
 extension AccountLinking.AccountLinkingViewMode : Swift.Equatable {}
 extension AccountLinking.AccountLinkingViewMode : Swift.Hashable {}
