@@ -1,9 +1,25 @@
 # Change Log
 
+## 2.1.0
+
+#### Add
+* Add `Uber Eats` support
+* Ability to resume fetching older orders if available
+* `Home Depot`
+    * Add In-Store eReceipts support 
+
+#### Fixed
+* `Home Depot`, `HyVee`, `Dollar General`, `Giant Eagle`, `RiteAid`
+    * User authentication improvements
+* `Nike`
+    * Orders parsing improvements
+* Performance optimizations
+
+---
 ## 2.0.0
 
 #### Add
-* `Staples Canada`
+* `Staples Canada`, `Walmart Canada`, `Drizly`, `Seamless`
 * return `sessionId` for each action
 * Swift 5 support
 

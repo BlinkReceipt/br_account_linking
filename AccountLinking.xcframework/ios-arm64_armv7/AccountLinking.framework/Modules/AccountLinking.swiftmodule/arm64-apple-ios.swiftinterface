@@ -56,6 +56,7 @@ import _Concurrency
   case instacart = 8652
   case nike = 8712
   case shipt = 9016
+  case uberEats = 9137
   case chewy = 9947
   case seamless = 10068
   case grubhub = 10208
@@ -71,6 +72,7 @@ import _Concurrency
   @objc public var retailer: AccountLinking.Retailer
   @objc public var username: Swift.String
   @objc public var password: Swift.String
+  @objc public var returnLatestOrdersOnly: Swift.Bool
   @objc public init(retailer: AccountLinking.Retailer, username: Swift.String, password: Swift.String)
   @objc deinit
 }
@@ -82,8 +84,8 @@ import _Concurrency
   @objc public var logMessage: ((_ message: Swift.String) -> Swift.Void)?
   @objc public var displayDebugView: ((_ view: Any?) -> Swift.Void)?
   @objc public var viewMode: AccountLinking.AccountLinkingViewMode
-  @objc public func clearCache(_ retailer: AccountLinking.Retailer, completion: @escaping () -> Swift.Void)
   @objc public func resetOrdersHistoryForRetailer(_ retailer: AccountLinking.Retailer)
+  @objc public func removeUserDataForRetailer(_ retailer: AccountLinking.Retailer, completion: @escaping () -> Swift.Void)
   @objc public func updateConfiguration(_ data: Foundation.Data)
   @objc public func verifyAccount(_ account: AccountLinking.Account, completion: @escaping (_ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void)
   @objc public func grabNewOrders(_ account: AccountLinking.Account, dayCutoff: Swift.Double, completion: @escaping (_ orders: [[Swift.AnyHashable : Any]], _ remaining: Swift.Int, _ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void)

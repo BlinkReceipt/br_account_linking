@@ -212,12 +212,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 enum Retailer : NSInteger;
 @class NSString;
+@class NSNumber;
 
 SWIFT_CLASS("_TtC14AccountLinking7Account")
 @interface Account : NSObject
 @property (nonatomic) enum Retailer retailer;
 @property (nonatomic, copy) NSString * _Nonnull username;
 @property (nonatomic, copy) NSString * _Nonnull password;
+@property (nonatomic) BOOL returnLatestOrdersOnly;
 - (nonnull instancetype)initWithRetailer:(enum Retailer)retailer username:(NSString * _Nonnull)username password:(NSString * _Nonnull)password OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -227,7 +229,6 @@ enum AccountLinkingViewMode : NSInteger;
 @class NSData;
 @class UIViewController;
 @class NSError;
-@class NSNumber;
 
 SWIFT_CLASS("_TtC14AccountLinking21AccountLinkingManager")
 @interface AccountLinkingManager : NSObject
@@ -241,16 +242,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic) enum AccountLinkingViewMode viewMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Clears all cache reletad to a specific retailer
-/// \param retailer A retailer for which to remove the cache
-///
-/// \param completion A callback when all cache is cleared
-///
-- (void)clearCache:(enum Retailer)retailer completion:(void (^ _Nonnull)(void))completion;
 /// Reset the stored history of orders for provided retailer
 /// \param retailer A retailer for which to remove the cached orders
 ///
 - (void)resetOrdersHistoryForRetailer:(enum Retailer)retailer;
+/// Clears any user’s related data for a retailer
+/// \param retailer A retailer for which to remove the user’s data
+///
+- (void)removeUserDataForRetailer:(enum Retailer)retailer completion:(void (^ _Nonnull)(void))completion;
 /// Update retailer’s config file
 /// \param data Configuration data object
 ///
@@ -339,6 +338,7 @@ typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerInstacart = 8652,
   RetailerNike = 8712,
   RetailerShipt = 9016,
+  RetailerUberEats = 9137,
   RetailerChewy = 9947,
   RetailerSeamless = 10068,
   RetailerGrubhub = 10208,
@@ -565,12 +565,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 enum Retailer : NSInteger;
 @class NSString;
+@class NSNumber;
 
 SWIFT_CLASS("_TtC14AccountLinking7Account")
 @interface Account : NSObject
 @property (nonatomic) enum Retailer retailer;
 @property (nonatomic, copy) NSString * _Nonnull username;
 @property (nonatomic, copy) NSString * _Nonnull password;
+@property (nonatomic) BOOL returnLatestOrdersOnly;
 - (nonnull instancetype)initWithRetailer:(enum Retailer)retailer username:(NSString * _Nonnull)username password:(NSString * _Nonnull)password OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -580,7 +582,6 @@ enum AccountLinkingViewMode : NSInteger;
 @class NSData;
 @class UIViewController;
 @class NSError;
-@class NSNumber;
 
 SWIFT_CLASS("_TtC14AccountLinking21AccountLinkingManager")
 @interface AccountLinkingManager : NSObject
@@ -594,16 +595,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic) enum AccountLinkingViewMode viewMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Clears all cache reletad to a specific retailer
-/// \param retailer A retailer for which to remove the cache
-///
-/// \param completion A callback when all cache is cleared
-///
-- (void)clearCache:(enum Retailer)retailer completion:(void (^ _Nonnull)(void))completion;
 /// Reset the stored history of orders for provided retailer
 /// \param retailer A retailer for which to remove the cached orders
 ///
 - (void)resetOrdersHistoryForRetailer:(enum Retailer)retailer;
+/// Clears any user’s related data for a retailer
+/// \param retailer A retailer for which to remove the user’s data
+///
+- (void)removeUserDataForRetailer:(enum Retailer)retailer completion:(void (^ _Nonnull)(void))completion;
 /// Update retailer’s config file
 /// \param data Configuration data object
 ///
@@ -692,6 +691,7 @@ typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerInstacart = 8652,
   RetailerNike = 8712,
   RetailerShipt = 9016,
+  RetailerUberEats = 9137,
   RetailerChewy = 9947,
   RetailerSeamless = 10068,
   RetailerGrubhub = 10208,
@@ -918,12 +918,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 enum Retailer : NSInteger;
 @class NSString;
+@class NSNumber;
 
 SWIFT_CLASS("_TtC14AccountLinking7Account")
 @interface Account : NSObject
 @property (nonatomic) enum Retailer retailer;
 @property (nonatomic, copy) NSString * _Nonnull username;
 @property (nonatomic, copy) NSString * _Nonnull password;
+@property (nonatomic) BOOL returnLatestOrdersOnly;
 - (nonnull instancetype)initWithRetailer:(enum Retailer)retailer username:(NSString * _Nonnull)username password:(NSString * _Nonnull)password OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -933,7 +935,6 @@ enum AccountLinkingViewMode : NSInteger;
 @class NSData;
 @class UIViewController;
 @class NSError;
-@class NSNumber;
 
 SWIFT_CLASS("_TtC14AccountLinking21AccountLinkingManager")
 @interface AccountLinkingManager : NSObject
@@ -947,16 +948,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic) enum AccountLinkingViewMode viewMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Clears all cache reletad to a specific retailer
-/// \param retailer A retailer for which to remove the cache
-///
-/// \param completion A callback when all cache is cleared
-///
-- (void)clearCache:(enum Retailer)retailer completion:(void (^ _Nonnull)(void))completion;
 /// Reset the stored history of orders for provided retailer
 /// \param retailer A retailer for which to remove the cached orders
 ///
 - (void)resetOrdersHistoryForRetailer:(enum Retailer)retailer;
+/// Clears any user’s related data for a retailer
+/// \param retailer A retailer for which to remove the user’s data
+///
+- (void)removeUserDataForRetailer:(enum Retailer)retailer completion:(void (^ _Nonnull)(void))completion;
 /// Update retailer’s config file
 /// \param data Configuration data object
 ///
@@ -1045,6 +1044,7 @@ typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerInstacart = 8652,
   RetailerNike = 8712,
   RetailerShipt = 9016,
+  RetailerUberEats = 9137,
   RetailerChewy = 9947,
   RetailerSeamless = 10068,
   RetailerGrubhub = 10208,
