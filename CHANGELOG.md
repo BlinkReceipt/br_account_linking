@@ -1,5 +1,22 @@
 # Change Log
 
+## 2.1.1
+
+#### Add
+* `Best Buy`
+    * Add shipments for online orders
+    * Add In-Store orders support
+* Performance optimizations
+
+#### Fixed
+* `HyVee`, `RiteAid`
+    * parse orders improvements
+* `Macy's`
+    * authentication improvements
+* Data quality improvements
+* XCode 13 version fix 
+
+---
 ## 2.1.0
 
 #### Add
