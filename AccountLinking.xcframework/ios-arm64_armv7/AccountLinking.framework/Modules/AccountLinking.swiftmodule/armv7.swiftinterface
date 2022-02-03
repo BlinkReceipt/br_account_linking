@@ -53,15 +53,18 @@ import _Concurrency
   case starbucks = 6677
   case dominosPizza = 8366
   case tacoBell = 8598
+  case amazonBeta = 8643
   case instacart = 8652
   case nike = 8712
   case shipt = 9016
   case uberEats = 9137
   case chewy = 9947
   case seamless = 10068
+  case amazonUKBeta = 10078
   case grubhub = 10208
   case doordash = 10241
   case drizly = 10934
+  case amazonCABeta = 12099
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

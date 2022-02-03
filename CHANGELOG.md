@@ -1,5 +1,13 @@
 # Change Log
 
+## 2.2.0
+
+#### Add
+* `Amazon`
+    * Performance optimizations
+    * Return `PaymentMethods`, `Tax Amount`, `Delivery Address`, `Shipping Amount` and a flag when it is a subscription order, 
+
+---
 ## 2.1.1
 
 #### Add

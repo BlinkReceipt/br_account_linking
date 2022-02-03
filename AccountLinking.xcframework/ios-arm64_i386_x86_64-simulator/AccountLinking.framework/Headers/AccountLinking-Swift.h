@@ -335,15 +335,18 @@ typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerStarbucks = 6677,
   RetailerDominosPizza = 8366,
   RetailerTacoBell = 8598,
+  RetailerAmazonBeta = 8643,
   RetailerInstacart = 8652,
   RetailerNike = 8712,
   RetailerShipt = 9016,
   RetailerUberEats = 9137,
   RetailerChewy = 9947,
   RetailerSeamless = 10068,
+  RetailerAmazonUKBeta = 10078,
   RetailerGrubhub = 10208,
   RetailerDoordash = 10241,
   RetailerDrizly = 10934,
+  RetailerAmazonCABeta = 12099,
 };
 
 #if __has_attribute(external_source_symbol)
@@ -688,15 +691,18 @@ typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerStarbucks = 6677,
   RetailerDominosPizza = 8366,
   RetailerTacoBell = 8598,
+  RetailerAmazonBeta = 8643,
   RetailerInstacart = 8652,
   RetailerNike = 8712,
   RetailerShipt = 9016,
   RetailerUberEats = 9137,
   RetailerChewy = 9947,
   RetailerSeamless = 10068,
+  RetailerAmazonUKBeta = 10078,
   RetailerGrubhub = 10208,
   RetailerDoordash = 10241,
   RetailerDrizly = 10934,
+  RetailerAmazonCABeta = 12099,
 };
 
 #if __has_attribute(external_source_symbol)
@@ -1041,15 +1047,18 @@ typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerStarbucks = 6677,
   RetailerDominosPizza = 8366,
   RetailerTacoBell = 8598,
+  RetailerAmazonBeta = 8643,
   RetailerInstacart = 8652,
   RetailerNike = 8712,
   RetailerShipt = 9016,
   RetailerUberEats = 9137,
   RetailerChewy = 9947,
   RetailerSeamless = 10068,
+  RetailerAmazonUKBeta = 10078,
   RetailerGrubhub = 10208,
   RetailerDoordash = 10241,
   RetailerDrizly = 10934,
+  RetailerAmazonCABeta = 12099,
 };
 
 #if __has_attribute(external_source_symbol)
