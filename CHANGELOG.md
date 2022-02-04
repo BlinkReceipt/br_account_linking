@@ -1,5 +1,12 @@
 # Change Log
 
+## 2.2.1
+
+#### Fixed
+* `Amazon`
+    * User authentication optimizations
+
+---
 ## 2.2.0
 
 #### Add
