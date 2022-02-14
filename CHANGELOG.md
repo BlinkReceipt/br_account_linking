@@ -1,5 +1,17 @@
 # Change Log
 
+## 2.2.2
+
+#### Fixed
+* `Shipt`
+    * Fixed `retailerId` and resolved a random exception when user is authenticated
+* `Starbucks`
+    * Order parsing fixes due to merchant changes 
+#### Add
+* `Amazon`
+    * Add Digital orders support
+
+---
 ## 2.2.1
 
 #### Fixed
