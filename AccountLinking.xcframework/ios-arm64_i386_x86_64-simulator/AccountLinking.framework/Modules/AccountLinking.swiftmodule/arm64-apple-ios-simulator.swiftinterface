@@ -35,6 +35,7 @@ import _Concurrency
   case heb = 44
   case bjsWholesale = 45
   case wegmans = 52
+  case sprouts = 54
   case hyVee = 56
   case riteAid = 143
   case giantEagle = 144
@@ -49,12 +50,14 @@ import _Concurrency
   case bedBathAndBeyond = 6074
   case staplesCA = 6127
   case dicksSportingGoods = 6162
+  case gap = 6457
   case macys = 6802
   case starbucks = 6677
   case dominosPizza = 8366
   case tacoBell = 8598
   case amazonBeta = 8643
   case instacart = 8652
+  case ulta = 8662
   case nike = 8712
   case shipt = 9016
   case uberEats = 9137

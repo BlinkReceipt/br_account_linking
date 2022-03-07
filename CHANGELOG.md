@@ -1,5 +1,14 @@
 # Change Log
 
+## 2.3.0
+
+#### Fixed
+* `Amazon`
+    * User authentication optimizations
+ #### Add
+* `Sprouts`, `GAP`, `Ulta Beauty`,   
+
+---
 ## 2.2.2
 
 #### Fixed
