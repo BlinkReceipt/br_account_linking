@@ -2,11 +2,19 @@
 
 ## 2.3.0
 
-#### Fixed
+#### Add
+* `Sprouts`, `GAP`, `Ulta Beauty`
 * `Amazon`
     * User authentication optimizations
- #### Add
-* `Sprouts`, `GAP`, `Ulta Beauty`,   
+    * `AmazonBeta` support
+* Android performance optimizations
+
+---
+## 2.2.4 (OTA)
+
+#### Add
+* `Amazon`
+    * Enable more logs
 
 ---
 ## 2.2.2
