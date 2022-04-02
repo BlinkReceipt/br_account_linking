@@ -1,5 +1,22 @@
 # Change Log
 
+## 2.3.8
+
+* `Amazon`
+    * AmazonGo order support
+    * Authentication flow improvements
+    * Improved analytics
+    * Improved 2FA support
+    * Fixed bug failing to return prices of some Canadian orders
+    * Fixed bug intermittently not completing when no new orders are found
+    * Other bug fixes and optimizations
+* `Walmart`
+    * Authentication improvements
+* `GAP`
+    * Improved fetching of orders  
+* `Kroger`
+    * Authentication improvements
+
 ## 2.3.0
 
 #### Add
