@@ -1,5 +1,16 @@
 # Change Log
 
+## 2.3.13
+
+* `Walmart`, `GAP`
+    * Authentication flow improvements
+* `AmazonBeta`
+    * Add support for product: `seller`, `condition`, `productUrl`, `currencyCode`, `subscriptionFrequency`
+    * Add support fot ereceipt `currencyCode`
+    * Fixed bug failing to return products for some orders
+    * Fixed bug failing to return correct shipping status 
+
+---
 ## 2.3.8
 
 * `Amazon`
@@ -13,10 +24,57 @@
 * `Walmart`
     * Authentication improvements
 * `GAP`
-    * Improved fetching of orders  
+    * Improved fetching of orders
 * `Kroger`
     * Authentication improvements
 
+---
+## 2.3.7 (OTA)
+
+#### Fixed
+* `Amazon`
+    * Doesn't complete sometime when no new orders are found
+* `GAP`
+    * Improved fetching of orders from multiple pages
+
+---
+## 2.3.6 (OTA)
+
+#### Fixed
+* `Amazon`
+    * Failed to return prices of some canadian orders
+
+---
+## 2.3.5 (OTA)
+
+#### Fixed
+* `Amazon`
+    * big fixes and optimizations
+
+---
+## 2.3.4 (OTA)
+
+#### Fixed
+* `Amazon`
+    * AmazonGo orders support
+
+---
+## 2.3.3 (OTA)
+
+#### Fixed
+* `Walmart`
+    * Add support for the new Walmart authentication flow
+
+---
+## 2.3.2 (OTA)
+
+#### Fixed
+* `Amazon`
+    * Authentication flow improvements
+    * Analytics improvements
+    * New 2FA url support
+
+---
 ## 2.3.0
 
 #### Add

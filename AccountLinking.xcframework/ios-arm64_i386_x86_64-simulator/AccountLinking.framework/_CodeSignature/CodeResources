@@ -30,7 +30,7 @@
 		</data>
 		<key>11.alp</key>
 		<data>
-		u/sUUpk1M9sC+IbHURJq/IroYEU=
+		p7dDZp6pzornp8ZQO2DCrxfX6kE=
 		</data>
 		<key>12.alp</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>6457.alp</key>
 		<data>
-		ALHoBFZBj3Zrwekj2PIIwxyBGbA=
+		RT5gFusodn1ybCZCbObTZfN8/uc=
 		</data>
 		<key>6677.alp</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>8643.alp</key>
 		<data>
-		kn8ojaWB4XetGLMmWlQa/8LoRb4=
+		Q2UbTqtkF8PPRogjJqvhs6AckDo=
 		</data>
 		<key>8652.alp</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>Headers/AccountLinking-Swift.h</key>
 		<data>
-		0JHqOJ2TUYtKDXVt35lHSXSGUU0=
+		EVueVW16OHszz5iI/q+YI2YgEzA=
 		</data>
 		<key>Headers/AccountLinking.h</key>
 		<data>
@@ -210,103 +210,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GYy0rWzfF6qGBemU+c42A6Daq54=
+		y3rpx60spA9d4bQsV1cJ5/gqUuo=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		I/I9qqcENk+pRzrPjg++hbJpTBU=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		I/I9qqcENk+pRzrPjg++hbJpTBU=
+		GJ6mdDN/XelfmTanibFTtcm4Vao=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Gx/dfPGYHUaEDg/CT5K7UH9Z6Ro=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/Project/i386.swiftsourceinfo</key>
-		<data>
-		Gx/dfPGYHUaEDg/CT5K7UH9Z6Ro=
+		7YI2HFwuwXPw/eKB7AA5WltlLxw=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		I0wSaE4YD1cAeCNgKv7TFkpCtE4=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<data>
-		I0wSaE4YD1cAeCNgKv7TFkpCtE4=
+		kPJ98AxfzqUPHRQdhkRfU9y8f90=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Z+Xaaw5MXSHOM/Is1B8JuqLzJsI=
+		PDlbeR0dVqWoeG6zBJCkPeQE1rI=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nWr2oUZOLBz4Q/UpWSdQ6C81OXo=
+		j4lyxYhBV2HeQc7wSXfPY1zEAQQ=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		g7Um7L/0d37oMecGyK/iXti3r0I=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		Z+Xaaw5MXSHOM/Is1B8JuqLzJsI=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		nWr2oUZOLBz4Q/UpWSdQ6C81OXo=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		g7Um7L/0d37oMecGyK/iXti3r0I=
+		YbvuWiZNg0dBDw2gW1OBjPoiY0s=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		nbNnZ9i30VIZ7xn78EXlWeOnSy4=
+		ikBVOJxoKOnKQ/l5TonESbvf+bc=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lTR8pgnG3O55NdcY2Ho+xU8y9wA=
+		n3GzQaivlS5pcuq26rTc3t3KgKs=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		b2D5wdgJg4lA7YkAT3rD8LS55Zc=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/i386.swiftdoc</key>
-		<data>
-		nbNnZ9i30VIZ7xn78EXlWeOnSy4=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/i386.swiftinterface</key>
-		<data>
-		lTR8pgnG3O55NdcY2Ho+xU8y9wA=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/i386.swiftmodule</key>
-		<data>
-		b2D5wdgJg4lA7YkAT3rD8LS55Zc=
+		RbaJNNoRQ+08MHqlnvXvAlKpe3I=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		FtD1f1VMQp+1ohLwaR30NNTRTOk=
+		efslpEigEJBm2GUW4PXhJR7Mjok=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		27dCBbaUnRSxEYobPiW5Yt5y660=
+		dtZeFYfXuJW/UpefbMIPgCc9uhc=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FPk0y0qj6OC3Hm322emSenHfFFo=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		FtD1f1VMQp+1ohLwaR30NNTRTOk=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		27dCBbaUnRSxEYobPiW5Yt5y660=
-		</data>
-		<key>Modules/AccountLinking.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		FPk0y0qj6OC3Hm322emSenHfFFo=
+		W8SyIW5G5bKzMcAc1ckzeTF0bFY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -314,7 +266,7 @@
 		</data>
 		<key>retailers.alp</key>
 		<data>
-		luoRkG2e2RpwWFDz+jvvCihVIMg=
+		MRaWrWrk9cf66PpGb2XfLnmdQrY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -389,11 +341,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u/sUUpk1M9sC+IbHURJq/IroYEU=
+			p7dDZp6pzornp8ZQO2DCrxfX6kE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jiS+Dbja3pwYBqCiafH4Foi8WjfQX5stIbN/1HYw6y0=
+			yLuMudZYKtmOj0P4fuEc+QIA7Mrhbt9WKXPXNdbibX4=
 			</data>
 		</dict>
 		<key>12.alp</key>
@@ -708,11 +660,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ALHoBFZBj3Zrwekj2PIIwxyBGbA=
+			RT5gFusodn1ybCZCbObTZfN8/uc=
 			</data>
 			<key>hash2</key>
 			<data>
-			NCP+wSIhBqbLozr+hvwXscb/rq0MD2FfV1vHhXxnr+c=
+			55qPhKuSwRkzzrl0Zf/zrg33vO5aZssGPIdE7lJ77ts=
 			</data>
 		</dict>
 		<key>6677.alp</key>
@@ -774,11 +726,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kn8ojaWB4XetGLMmWlQa/8LoRb4=
+			Q2UbTqtkF8PPRogjJqvhs6AckDo=
 			</data>
 			<key>hash2</key>
 			<data>
-			FxQqrhK9u9BDU7gahirpfzF2FpT5SgNzhfX9q0fNaFA=
+			QW3iHuJiv4GOWc8nVQc1IFEN8Wr7vFA6slaub3ygZaM=
 			</data>
 		</dict>
 		<key>8652.alp</key>
@@ -862,11 +814,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0JHqOJ2TUYtKDXVt35lHSXSGUU0=
+			EVueVW16OHszz5iI/q+YI2YgEzA=
 			</data>
 			<key>hash2</key>
 			<data>
-			8uE0RC6HTMi50FzKAUeRvjULFxI81VJWk4XP0LUKZm4=
+			Vz70iVzqC3TO6hiOZPmh2vtyZdkbmZeIBBxMhp9hJM8=
 			</data>
 		</dict>
 		<key>Headers/AccountLinking.h</key>
@@ -884,264 +836,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I/I9qqcENk+pRzrPjg++hbJpTBU=
+			GJ6mdDN/XelfmTanibFTtcm4Vao=
 			</data>
 			<key>hash2</key>
 			<data>
-			JMqD1y7qSX0hs8UORIeS99VAUqVDtaeFmzhpJDmmVtM=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I/I9qqcENk+pRzrPjg++hbJpTBU=
-			</data>
-			<key>hash2</key>
-			<data>
-			JMqD1y7qSX0hs8UORIeS99VAUqVDtaeFmzhpJDmmVtM=
+			KLVUuUYIAqmpQ3OwV5KODrfa0H2kSg5FqmJF0TwrNhk=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Gx/dfPGYHUaEDg/CT5K7UH9Z6Ro=
+			7YI2HFwuwXPw/eKB7AA5WltlLxw=
 			</data>
 			<key>hash2</key>
 			<data>
-			qcv3nh+amzqpNy1lh6pin3TADvGAmvnNzjUQ+9wygUY=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/Project/i386.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Gx/dfPGYHUaEDg/CT5K7UH9Z6Ro=
-			</data>
-			<key>hash2</key>
-			<data>
-			qcv3nh+amzqpNy1lh6pin3TADvGAmvnNzjUQ+9wygUY=
+			CRvy7rC5iHtvyYGLKXmdBFQ2SpY92atsEPHd2OcDx/w=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I0wSaE4YD1cAeCNgKv7TFkpCtE4=
+			kPJ98AxfzqUPHRQdhkRfU9y8f90=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bt5Jx13ZcDUgYs9NQwsSAyJAIrrPMy5YD00eVnKQ3ig=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I0wSaE4YD1cAeCNgKv7TFkpCtE4=
-			</data>
-			<key>hash2</key>
-			<data>
-			Bt5Jx13ZcDUgYs9NQwsSAyJAIrrPMy5YD00eVnKQ3ig=
+			xdQ1uU6zyukSRu7Hd5Mz1i1fLF/uRos6UdesNJaEoH0=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z+Xaaw5MXSHOM/Is1B8JuqLzJsI=
+			PDlbeR0dVqWoeG6zBJCkPeQE1rI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3Q46Qemp1+TMC9vP/CND5Fit3HyIN6P1hH7zotgCVpY=
+			ep6tUJq7yCLAdiIVOAbR1DM+7aTkHFdI/Yyp/YQwj+8=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nWr2oUZOLBz4Q/UpWSdQ6C81OXo=
+			j4lyxYhBV2HeQc7wSXfPY1zEAQQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			0vXNAMfc1rLED+KkeHgz5fmUkNaLHedcA1Tqi80//Ak=
+			9CCmoKkN7Z8L/muXoVeJszieSgXwnIcFhvvnwdv6wFU=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g7Um7L/0d37oMecGyK/iXti3r0I=
+			YbvuWiZNg0dBDw2gW1OBjPoiY0s=
 			</data>
 			<key>hash2</key>
 			<data>
-			JcW8wphg/uuVn53rbVr7Ch3HoU74+dhGtvJD8kaTP8o=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Z+Xaaw5MXSHOM/Is1B8JuqLzJsI=
-			</data>
-			<key>hash2</key>
-			<data>
-			3Q46Qemp1+TMC9vP/CND5Fit3HyIN6P1hH7zotgCVpY=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nWr2oUZOLBz4Q/UpWSdQ6C81OXo=
-			</data>
-			<key>hash2</key>
-			<data>
-			0vXNAMfc1rLED+KkeHgz5fmUkNaLHedcA1Tqi80//Ak=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			g7Um7L/0d37oMecGyK/iXti3r0I=
-			</data>
-			<key>hash2</key>
-			<data>
-			JcW8wphg/uuVn53rbVr7Ch3HoU74+dhGtvJD8kaTP8o=
+			NXYi7DlMbFAMfCBiW0b4Up5MLklqm7rr2EWFaWnQ/2k=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nbNnZ9i30VIZ7xn78EXlWeOnSy4=
+			ikBVOJxoKOnKQ/l5TonESbvf+bc=
 			</data>
 			<key>hash2</key>
 			<data>
-			zFhQdoDQPkfm8qYfMcqZw5e7IRtjkDyPx95OCPOo9y8=
+			Voev9Gv+w1HDiixWj7fsGMvIyc6Kh6jF4Wu9cP7Y+Yg=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lTR8pgnG3O55NdcY2Ho+xU8y9wA=
+			n3GzQaivlS5pcuq26rTc3t3KgKs=
 			</data>
 			<key>hash2</key>
 			<data>
-			FriLKTIcEFeSbzJfeP1wmjICs4Yp2olSTiX5aXDyOtA=
+			d4zmFQc7QIwPuvucoDA2pocQ/+l0i/cQW5gKxEQKMIo=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b2D5wdgJg4lA7YkAT3rD8LS55Zc=
+			RbaJNNoRQ+08MHqlnvXvAlKpe3I=
 			</data>
 			<key>hash2</key>
 			<data>
-			3vcYkxW/CbiUhD+ovpZ6uvLGqcU0C6nSIHkYEiAgZG8=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/i386.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nbNnZ9i30VIZ7xn78EXlWeOnSy4=
-			</data>
-			<key>hash2</key>
-			<data>
-			zFhQdoDQPkfm8qYfMcqZw5e7IRtjkDyPx95OCPOo9y8=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/i386.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lTR8pgnG3O55NdcY2Ho+xU8y9wA=
-			</data>
-			<key>hash2</key>
-			<data>
-			FriLKTIcEFeSbzJfeP1wmjICs4Yp2olSTiX5aXDyOtA=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/i386.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			b2D5wdgJg4lA7YkAT3rD8LS55Zc=
-			</data>
-			<key>hash2</key>
-			<data>
-			3vcYkxW/CbiUhD+ovpZ6uvLGqcU0C6nSIHkYEiAgZG8=
+			CoIJO/OjQozJ705C/Z5+CE5KX6fp2xC7/0Gcgwl2jtg=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FtD1f1VMQp+1ohLwaR30NNTRTOk=
+			efslpEigEJBm2GUW4PXhJR7Mjok=
 			</data>
 			<key>hash2</key>
 			<data>
-			RUGimKhF2B9rk8Z0jhEofoNiUWL/vBIorYFdqvcvnkc=
+			suwJyCAsg0/MIxJfSXcy4yfTJhKmariUrrmABklC8dQ=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			27dCBbaUnRSxEYobPiW5Yt5y660=
+			dtZeFYfXuJW/UpefbMIPgCc9uhc=
 			</data>
 			<key>hash2</key>
 			<data>
-			sMnqgEks+2POuvCNKk+QLeuGulqiMthEn/wMGeQoyq8=
+			GdNBJZCKk4BGfyV36E13GbUs5EFZcWG/ueMXcOGs/kI=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FPk0y0qj6OC3Hm322emSenHfFFo=
+			W8SyIW5G5bKzMcAc1ckzeTF0bFY=
 			</data>
 			<key>hash2</key>
 			<data>
-			/Dwag98muBuzsVRLH+Z5bO6vUC2LjIXOD9m2d24PeX0=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FtD1f1VMQp+1ohLwaR30NNTRTOk=
-			</data>
-			<key>hash2</key>
-			<data>
-			RUGimKhF2B9rk8Z0jhEofoNiUWL/vBIorYFdqvcvnkc=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			27dCBbaUnRSxEYobPiW5Yt5y660=
-			</data>
-			<key>hash2</key>
-			<data>
-			sMnqgEks+2POuvCNKk+QLeuGulqiMthEn/wMGeQoyq8=
-			</data>
-		</dict>
-		<key>Modules/AccountLinking.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FPk0y0qj6OC3Hm322emSenHfFFo=
-			</data>
-			<key>hash2</key>
-			<data>
-			/Dwag98muBuzsVRLH+Z5bO6vUC2LjIXOD9m2d24PeX0=
+			gp0ZfBf1QOKzxwINFFme4pA5VXcplSp998LVCGm69dU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1159,11 +979,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			luoRkG2e2RpwWFDz+jvvCihVIMg=
+			MRaWrWrk9cf66PpGb2XfLnmdQrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			4YDuJAtl9lXYv4HcxX/jtzZKUaacksbueML14ujpXeA=
+			+AlsgNwzcMqDbUh1u0RauYcXLo2dc/jhNoD4WwHdNHY=
 			</data>
 		</dict>
 	</dict>
