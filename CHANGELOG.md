@@ -1,5 +1,19 @@
 # Change Log
 
+## 2.3.22 
+
+* `Walmart`
+    * Improved fetching of orders
+* `Kroger`, `AmazonBeta`
+    * General improvements
+  
+---
+## 2.3.16
+
+* `Instacart`, `UberEats`, `Publix`
+    * Authentication bug fixes and improvements
+
+---
 ## 2.3.13
 
 * `Walmart`, `GAP`
