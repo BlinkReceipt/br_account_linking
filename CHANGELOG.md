@@ -1,5 +1,24 @@
 # Change Log
 
+## 2.4.0
+
+* Add `Albertsons` support
+* Add `Jewel Osco` support
+* Add `Safeway` support
+* Add `Vons` support
+* Add `Acme Markets` support
+* Add `Harris Teeter` support
+* Add `Fred Meyer` support
+* Add `Food 4 Less` support
+* Add `Ralphs` support
+* `Kroger`
+    * Improved order status support
+    * Returning orders from related merchants (`Harris Teeter`, `Pick 'n Save`) with propeply mapped `merchantName` and `retailerId`
+* `CVS`, `Starbucks`
+    * User authentication improvements
+* Improved logging
+  
+---
 ## 2.3.22 
 
 * `Walmart`
