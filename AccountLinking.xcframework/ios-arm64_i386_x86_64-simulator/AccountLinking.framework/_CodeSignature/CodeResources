@@ -246,19 +246,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Uxq97ob4El/iRv7t/l1suAynALQ=
+		ZH0QHgQJbMMEt2g73IvIdZOvzdo=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		B/XtRJPpstL+nEwFJH3Yg69U1EE=
+		3OUwvj80XfLXVxOsslC11tFoYb8=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Zoa5VXH724OpoZjdLUxfulaI708=
+		V/oVUGtE0U9Gngvs0X0Ika+xPY0=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		BmWSewDMuvfhGf+2XdqU+m81svE=
+		F1Dt1ia/7iNuxeloFxHjcZItWJ4=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -270,7 +270,7 @@
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hWSx8WVrBL4GPQHlUx44dW0NOyc=
+		N/ZEc1dhm0BjSlRk42UtmVukeqI=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -282,7 +282,7 @@
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aeG+ScNXkH7MI15mGdnN0G3gCm8=
+		5xM6SYui5SrLD35bhDS0FilCZDw=
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -294,7 +294,7 @@
 		</data>
 		<key>Modules/AccountLinking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0iWrfrq+BySOxgktzqSmxu8VbuM=
+		pWXqT4qTf1wMZx87SDvNH9R+fQE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -302,7 +302,7 @@
 		</data>
 		<key>retailers.alp</key>
 		<data>
-		Zd1DH4QVZwPYbnIvm4RE2dBywPs=
+		hBQA0+S2kVYwGwQucutLYXN1DwU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -971,33 +971,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B/XtRJPpstL+nEwFJH3Yg69U1EE=
+			3OUwvj80XfLXVxOsslC11tFoYb8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ppFEKlTdehJMrExtbHkO7/5+gR14b4Xjy3vhCWZPpk8=
+			tpIZtUuA8ai2EP83XpVu6al60r/VQH/eZP80poTMm28=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Zoa5VXH724OpoZjdLUxfulaI708=
+			V/oVUGtE0U9Gngvs0X0Ika+xPY0=
 			</data>
 			<key>hash2</key>
 			<data>
-			lUMhiuzchy77zjPGUKQ9XUroKVXxmYWtY6JE+wzJroo=
+			QnloDlHhphrsJ+p5MhNzmNOM898534D0H8w+FxemUbs=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BmWSewDMuvfhGf+2XdqU+m81svE=
+			F1Dt1ia/7iNuxeloFxHjcZItWJ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			0LYT2zzUNgzb+bxHjabCsR0+ue5t60daOR6ZZOUh1q4=
+			KFVTxHkV4nWtoY+5n5DD/QahtcIWOcCCitDkxIUb7Xk=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1026,11 +1026,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hWSx8WVrBL4GPQHlUx44dW0NOyc=
+			N/ZEc1dhm0BjSlRk42UtmVukeqI=
 			</data>
 			<key>hash2</key>
 			<data>
-			WAWkaLw+pE0bMx0pGm4dtjfYI8Wsb5bj5zKFPqzzZ2k=
+			d/s4mNBr6cSxGuK9Ak3npZBn2OhqVjurdKfL+Hi5OlE=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -1059,11 +1059,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aeG+ScNXkH7MI15mGdnN0G3gCm8=
+			5xM6SYui5SrLD35bhDS0FilCZDw=
 			</data>
 			<key>hash2</key>
 			<data>
-			JlJClqDNsJA9XZ9XVMdw4ykEuj4xW/0CN/cvNuWOgfg=
+			Evk5IjZGt2Jq64IspoHwNWWTSfe09GZNJqpXIEpeLFQ=
 			</data>
 		</dict>
 		<key>Modules/AccountLinking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1092,11 +1092,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0iWrfrq+BySOxgktzqSmxu8VbuM=
+			pWXqT4qTf1wMZx87SDvNH9R+fQE=
 			</data>
 			<key>hash2</key>
 			<data>
-			cP+uKk8QH9kOI26WjG/xLtQ1upjJeW6YnyQ4DmYSJ/E=
+			gWGbWO2piYFLjsoT2/djI7x6/ymC1EyfKyV09KpZSEI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1114,11 +1114,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zd1DH4QVZwPYbnIvm4RE2dBywPs=
+			hBQA0+S2kVYwGwQucutLYXN1DwU=
 			</data>
 			<key>hash2</key>
 			<data>
-			2BhLo6V/7Eizy6YuDRBwWOPusuB3EMQPY3ZO6iUDSCk=
+			LTN4KkX2G0yKPlFFTSPXCrrWxZShVsdEqs+jlqp3OvQ=
 			</data>
 		</dict>
 	</dict>

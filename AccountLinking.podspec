@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                  = "AccountLinking"
-  s.version               = "2.4.0"
+  s.version               = "2.4.1"
   s.summary               = "AccountLinking SDK"
   s.homepage              = "https://github.com/BlinkReceipt/br_account_linking"
   s.license               = { :type => "MIT", :file => "LICENSE" }
