@@ -1,5 +1,44 @@
 # Change Log
 
+## 2.4.12
+* `Walmart`
+    * Add support for `ereceiptPurchaseType`: `in-store`, `online`
+    * Add support for product `ereceiptOrderStatus`: `completed`, `cancelled`, `ordered`
+    * Return `transactionId` for `in-store` order type
+    * Add support for a new authentication flow
+    * Shipment status improvements
+    * Return multiple shipments, if available
+    * Fix OTP authentication flow
+    * Stability improvements in old SDKs
+* `Walgreens`
+    * Add support for `ereceiptPurchaseType`: `in-store`, `online`
+    * Add support for `product`->`shippingStatus` and `shipment`->`status`. Expected values are: `completed`, `shipped`
+    * Return product `totalPrice`
+    * Stability improvements in old SDKs
+* `Instacart`
+    * Fix random issue when fetching lots of orders
+* `CVS`
+    * Add support for `ereceiptPurchaseType`: `in-store`
+    * Add support for product `ereceiptOrderStatus`: `completed`, `cancelled`
+    * Return `transactionId` for `in-store` order type
+    * Stability improvements in old SDKs
+* `Publix`
+    * Add support for `ereceiptPurchaseType`: `in-store`
+    * Add support for `product`->`shippingStatus` and `shipment`->`status`. Expected values are: `completed`, `shipped`
+    * Return product `totalPrice`
+* `Sprouts`
+    * Add support for `ereceiptPurchaseType`: `in-store`
+    * Add support for product `ereceiptOrderStatus`: `cancelled`
+    * Return `transactionId` for `in-store` order type
+* `ShopRite`
+    * Fix connection issues
+    * Add support for an `in-store` order type
+* `Target`, `Amazon`, `Costco`, `Kroger`
+    * Stability improvements in old SDKs
+
+* General improvements and optimizations
+
+--- 
 ## 2.4.0
 
 * Add `Albertsons` support
