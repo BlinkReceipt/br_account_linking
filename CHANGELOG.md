@@ -1,5 +1,86 @@
 # Change Log
 
+## 2.5.0
+* Added option to cancel alp operation
+* Added option to see account linking version
+* `Dollar General`
+    * Fixed an issue when linking account with 2FA
+    * Return `ereceiptPurchaseType` and `purchaseType` with possible values: `Delivery`
+    * Return `ereceiptOrderStatus` with possible values: `ordered`
+    * Return `shipments` for `Delivery` orders
+    * Return `storeNumber`
+    * Return `coupons` if available
+    * Improved fetching of the orders
+* `Sam's Club`
+    * Fixed an issue when linking account with 2FA
+    * Return `ereceiptPurchaseType` with possible values: `Delivery`
+    * Return `ereceiptOrderStatus` with possible values: `completed`
+    * Return `shipments` for `Delivery` orders
+    * Improved fetching of the orders
+* `Amazon`
+    * Fixed an issue with merchant returning previously fetched orders when `returnLatestOrdersOnly` is enabled
+    * Fixed `ereceiptPurchaseType` for `fresh` and `whole foods` orders
+    * Improved parsing of orders
+* `Albertsons`, `Acme Markets`, `Jewel Osco`, `Safeway`, `Vons`
+    * Improved merchant stability for Android
+    * Fixed an issue when linking some accounts
+    * Fixed an issue with merchant returning previously fetched orders when `returnLatestOrdersOnly` is enabled
+    * Added support for a `Pickup` orders
+    * Added support for `ereceiptOrderStatus` with possible values: `ordered` and `cancelled`
+    * Return `Shaw’s` or `Star Market` as `merchantName` when detected
+* `Costco`
+    * Fixed an issue with merchant returning previously fetched orders when `returnLatestOrdersOnly` is enabled
+    * Return product's `unitPrice`
+    * Return `ereceiptPurchaseType` and `purchaseType` with possible values: `Delivery`, `In-Store` 
+    * Return `ereceiptOrderStatus` with possible values: `complete`, `shipped`, `cancelled` 
+    * Return `transactionId` for `In-Store` orders
+    * Return `shipments` for `Delivery` orders
+* `Target`
+    * Fixed an issue with merchant returning previously fetched orders when `returnLatestOrdersOnly` is enabled
+    * Fixed an issues with not fetching some orders
+    * Return `purchaseType` and `ereceiptPurchaseType` with values: `In-Store`, `Pickup`, `Delivery`
+* `Walmart`
+    * Fixed a callback never called issue when invalid credentials are provided
+    * Fixed an issue with merchant returning previously fetched orders when `returnLatestOrdersOnly` is enabled
+    * Return `purchaseType` and `ereceiptPurchaseType` with values: `In-Store`, `Pickup`, `Delivery`
+* `Kroger`, `Food 4 Less`, `Fred Meyer`, `Harris Teeter`, `Ralphs`
+    * Fixed an issue with merchant returning previously fetched orders when `returnLatestOrdersOnly` is enabled
+    * Return `In-Store` instead of `in-store` order type
+    * Return `In-Store` instead of `fuel` order type
+    * Return `purchaseType`
+    * Added support for `Pickup` and `Delivery` order types
+    * Added stability imrpovements when linking an account
+* `Wegmans`
+    * Fixed an issue with merchant returning previously fetched orders when `returnLatestOrdersOnly` is enabled
+    * Return `purchaseType` and `ereceiptPurchaseType` with values: `In-Store` and `Delivery`
+    * Added support for `Delivery` order types
+* `CVS`
+    * Fixed an issue with merchant returning previously fetched orders when `returnLatestOrdersOnly` is enabled
+    * Return `purchaseType` and `ereceiptPurchaseType` with values: `Pickup` and `Delivery`
+    * Return `completed` when an order status is `delivered`
+    * Added stability improvements when linking an account
+* `Walgreens`
+    * Fixed an issue with merchant returning previously fetched orders when `returnLatestOrdersOnly` is enabled
+    * Return `purchaseType` and `ereceiptPurchaseType` with values: `Delivery`
+    * Return `shipments` for `Delivery` orders
+* `Lowe's`
+    * Fixed an issue with merchant returning previously fetched orders when `returnLatestOrdersOnly` is enabled
+    * Return `purchaseType` and `ereceiptPurchaseType` with values: `Pickup` and `Delivery`
+    * Return `ereceiptOrderStatus` or shipment `status` with possible values: `completed`, `returned`, `cancelled`, `shipped`, `ordered`  
+* `Home Depot`
+    * Fixed an issue when linking some accounts
+    * Fixed an issue with merchant returning previously fetched orders when `returnLatestOrdersOnly` is enabled
+    * Return `purchaseType` with possible values: `In-Store` and `Delivery`  
+    * Return `ereceiptOrderStatus` or `shippingStatus` with possible values `completed` or `ordered`
+* `Uber Eats`
+    * Fixed an issue when linking some accounts
+    * Return `ereceiptOrderStatus` with possible values:  `ordered`, `completed`, `cancelled`
+    * Return `products` list for `Pickup` order types and `shipments` list for a `Delivery` order types
+    * `ereceiptPurchaseType` returns only: `Delivery` or `Pickup`
+* `ShopRite`
+    * Fixed: Account linking issues
+
+---
 ## 2.4.12
 * `Walmart`
     * Add support for `ereceiptPurchaseType`: `in-store`, `online`
