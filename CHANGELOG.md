@@ -1,5 +1,14 @@
 # Change Log
 
+## 2.5.7
+* Added: Stability improvements for `Walmart`, `Kroger`, `Amazon`, `DoorDash`
+* Logging improvements
+* `Kroger`
+    * Improved `fullPrice` support
+* `Amazon` 
+    * Improved error handling during authentication
+
+---
 ## 2.5.0
 * Added option to cancel alp operation
 * Added option to see account linking version
