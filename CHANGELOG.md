@@ -1,5 +1,33 @@
 # Change Log
 
+## 2.5.19
+* `Walmart Canada`
+    * Added suppord for `Pickup` & `Delivery` purchase types
+    * Fixed payment info parsing
+    * Improved fetching of the orders
+* `Instacart`
+    * Authentication improvements
+* `Target`
+    * Fixed `Pickup` orders not being returned
+* `Sprouts`
+    * Fixed online orders not being returned
+    * Added support for `completed` and `refunded` order statuses
+* `Wegmans`
+    * Added suuport for `Pickup` purchase type
+    * Added support for `cancelled` order status
+* `Amazon`
+    * Stability improvements
+    * Fixed parsing of `Amazon Store` orders
+    * Added support for `Registry` contributions
+* `CVS`
+    * Added 2FA support
+* `Kroger`, `Food 4 Less`, `Fred Meyer`, `Harris Teeter`, `Ralphs`, * `ShopRite`, * `Starbucks`
+   * General improvements and optimizations
+* `Walmart` 
+    * Improved authentication support for account with 2FA enabled
+    * Improved fetching of the orders
+
+---
 ## 2.5.7
 * Added: Stability improvements for `Walmart`, `Kroger`, `Amazon`, `DoorDash`
 * Logging improvements
