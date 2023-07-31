@@ -1,5 +1,18 @@
 # Change Log
 
+## 2.5.23
+* `Walmart`
+    * Fixed an issue preventing us from returning all orders in the account
+* `Dollar General`, `DoorDash`, `Sprouts`, `Costco`
+    * Authentication improvements
+* `Sam's Club`
+    * Authentication improvements
+    * Added stability improvements for Android
+* `Instacart`
+    * Improved support for `Pickup` and `Delivery` purchase types
+    * Improved support for `cancelled` and `completed` order status
+
+---
 ## 2.5.19
 * `Walmart Canada`
     * Added suppord for `Pickup` & `Delivery` purchase types

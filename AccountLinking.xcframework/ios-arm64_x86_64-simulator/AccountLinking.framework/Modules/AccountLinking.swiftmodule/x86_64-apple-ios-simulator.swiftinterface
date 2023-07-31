@@ -25,9 +25,9 @@ import _StringProcessing
   case dollarGeneral = 4
   case dollarTree = 5
   case kroger = 6
+  case publix = 7
   case safeway = 8
   case samsClub = 9
-  case publix = 7
   case walgreens = 10
   case walmart = 11
   case staples = 12
