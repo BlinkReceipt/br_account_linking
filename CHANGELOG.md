@@ -1,5 +1,36 @@
 # Change Log
 
+## 2.6.0
+* `Postmates`
+    * Added merchant support
+* `Costco`
+    * Authentication improvements
+    * Improved parsing of `Delivery` orders
+    * Added stability improvements for Android
+* `Walmart`
+    * Authentication improvements
+* `Instacart`
+    * Authentication improvements
+    * Added `ereceiptSubMerchant` support
+* `Chewy`
+    * Authentication improvements
+    * Return `ereceiptPurchaseType` and `purchaseType` with possible values: `Delivery`
+    * Return shipment `status` with possible values: `shipped`, `completed`
+* `Sam's Club`
+    * Fixed `In-Store` orders fetching
+* `GrubHub`, `Seamless`
+    * Added `ereceiptSubMerchant` support
+    * Return `ereceiptPurchaseType` with possible values: `Delivery` and `Pickup`
+    * Return shipment `status` with possible values: `completed`
+* `Shipt`
+    * Improved fetching of orders
+    * Authentication improvements
+    * Return `ereceiptPurchaseType` and `purchaseType` with possible values: `Delivery`
+    * Return `ereceiptOrderStatus` with possible values: `completed`, `cancelled`
+* `Albertsons`, `Dollar Tree`
+    * Improved orders fetching
+
+---
 ## 2.5.23
 * `Walmart`
     * Fixed an issue preventing us from returning all orders in the account

@@ -436,6 +436,7 @@ typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerDoordash = 10241,
   RetailerDrizly = 10934,
   RetailerAmazonCABeta = 12099,
+  RetailerPostmates = 19671,
 };
 
 #endif

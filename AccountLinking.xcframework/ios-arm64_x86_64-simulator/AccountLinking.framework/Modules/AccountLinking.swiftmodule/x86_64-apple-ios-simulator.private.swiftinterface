@@ -79,6 +79,7 @@ import _StringProcessing
   case doordash = 10241
   case drizly = 10934
   case amazonCABeta = 12099
+  case postmates = 19671
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
