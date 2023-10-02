@@ -307,10 +307,14 @@ SWIFT_CLASS("_TtC14AccountLinking21AccountLinkingManager")
 @interface AccountLinkingManager : NSObject
 @property (nonatomic, copy) NSString * _Nullable identifier;
 @property (nonatomic, copy) NSString * _Nullable identifier1;
+@property (nonatomic, copy) NSString * _Nonnull identifier2;
+@property (nonatomic, copy) NSString * _Nonnull identifier3;
+@property (nonatomic, copy) NSString * _Nonnull identifier4;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinkingManager * _Nonnull shared;)
 + (AccountLinkingManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, copy) void (^ _Nullable analytics)(id _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable logMessage)(NSString * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable logs)(id _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable displayDebugView)(id _Nullable);
 @property (nonatomic) enum AccountLinkingViewMode viewMode;
 @property (nonatomic, readonly, copy) NSString * _Nonnull version;

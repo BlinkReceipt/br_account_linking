@@ -98,9 +98,13 @@ import _StringProcessing
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AccountLinkingManager : ObjectiveC.NSObject {
   @objc public var identifier: Swift.String?
   @objc public var identifier1: Swift.String?
+  @objc public var identifier2: Swift.String
+  @objc public var identifier3: Swift.String
+  @objc public var identifier4: Swift.String
   @objc public static let shared: AccountLinking.AccountLinkingManager
   @objc public var analytics: ((_ event: Any) -> Swift.Void)?
   @objc public var logMessage: ((_ message: Swift.String) -> Swift.Void)?
+  @objc public var logs: ((_ log: Any) -> Swift.Void)?
   @objc public var displayDebugView: ((_ view: Any?) -> Swift.Void)?
   @objc public var viewMode: AccountLinking.AccountLinkingViewMode
   @objc public var version: Swift.String {

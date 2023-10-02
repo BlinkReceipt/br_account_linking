@@ -1,5 +1,19 @@
 # Change Log
 
+## 2.6.5
+* `Dollar Tree`, `Family Dollar`
+    * Added stability improvements 
+* `DoorDash`
+    * Fixed duplicate orders issue 
+* `Uber Eats`, `Postmates`, `Albertsons`, `Acme Markets`, `Jewel Osco`, `Safeway`, `Vons`, `Walmart`
+    * Authentication improvements
+* `Costco`, `Kroger`
+    * Improved error handling 
+* `Acme Markets`, `Jewel Osco`, `Safeway`, `Vons`, `Taco Bell`
+    * Authentication improvements
+    * Improved orders fetching
+
+---
 ## 2.6.0
 * `Postmates`
     * Added merchant support
