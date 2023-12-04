@@ -1,5 +1,21 @@
 # Change Log
 
+## 2.7.0
+* `Temu (UK)`, `Tesco (UK)`, `SHEIN (US, UK, ES)`, `Sainsbury (UK)`, `AliExpress`, `Amazon (FR, ES)`, `ASDA (UK)`, `Costco (CA)`, `PC Express (CA)`, `Carrefour (ES)` and `UberEats (UK)`
+    * Added new merchant support
+* `Staples CA`
+    * Fixed an issue that can cause an order to be fetched multiple times
+* `Wegmans`
+    * Improved product category value
+* `Kroger`, `Ralphs`, `Food 4 Less`, `Fred Meyer`, `Harris Teeter`, `Uber Eats`, `Amazon`, `Target`, `Walmart`, `Walgreens`
+    * Improved merchant stability when authenticating
+* `Home Depot`
+    * Improved support for 2FA
+* `Albertsons`
+    * Improved orders fetching
+    * Android stability improvements
+
+---
 ## 2.6.5
 * `Dollar Tree`, `Family Dollar`
     * Added stability improvements 

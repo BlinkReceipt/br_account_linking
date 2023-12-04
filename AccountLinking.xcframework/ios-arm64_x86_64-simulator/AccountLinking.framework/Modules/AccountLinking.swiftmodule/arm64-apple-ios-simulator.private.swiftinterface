@@ -54,10 +54,15 @@ import _StringProcessing
   case familyDollar = 165
   case sephora = 171
   case bestBuy = 177
+  case costcoCA = 5718
   case walmartCA = 5849
   case marshalls = 5917
   case tjMaxx = 5921
   case kohls = 5929
+  case asda = 6036
+  case sainsburysUK = 6048
+  case tesco = 6051
+  case carrefourES = 6059
   case bedBathAndBeyond = 6074
   case staplesCA = 6127
   case dicksSportingGoods = 6162
@@ -79,6 +84,15 @@ import _StringProcessing
   case doordash = 10241
   case drizly = 10934
   case amazonCABeta = 12099
+  case amazonESBeta = 12686
+  case amazonFRBeta = 12688
+  case sheinES = 12691
+  case pcExpress = 12749
+  case temu = 12819
+  case sheinUK = 12848
+  case aliexpress = 12849
+  case uberEatsUK = 12850
+  case shein = 12882
   case postmates = 19671
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
