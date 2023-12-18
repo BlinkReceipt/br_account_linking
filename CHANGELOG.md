@@ -1,5 +1,21 @@
 # Change Log
 
+## 2.8.0
+* `Kroger`, `Food 4 Less`, `Fred Meyer`, `Harris Teeter`, `Ralphs`
+    * Fixed an issue with random incorrect product upcs
+* `Costco`
+    * Fixed an authentication issue on Android
+    * Improved orders fetching
+* `Instacart`, `Doordash`
+    * Improved merchant authentication
+* `Uber Eats`
+    * Improved orders fetching
+* `Shoprite`
+    * Added stability improvements
+* `Lowe's`, `Best Buy`, `BJ's Wholesale Club`
+    * Added 2FA support
+
+---
 ## 2.7.0
 * `Temu (UK)`, `Tesco (UK)`, `SHEIN (US, UK, ES)`, `Sainsbury (UK)`, `AliExpress`, `Amazon (FR, ES)`, `ASDA (UK)`, `Costco (CA)`, `PC Express (CA)`, `Carrefour (ES)` and `UberEats (UK)`
     * Added new merchant support
