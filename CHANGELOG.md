@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.9.0
+* Stability improvements
+
+---
 ## 2.8.0
 * `Kroger`, `Food 4 Less`, `Fred Meyer`, `Harris Teeter`, `Ralphs`
     * Fixed an issue with random incorrect product upcs
