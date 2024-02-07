@@ -333,7 +333,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 ///
 - (void)updateConfiguration:(NSData * _Nonnull)data;
 - (void)cancelSessionWithIdentifier:(NSString * _Nonnull)identifier;
-- (void)sync;
 /// It validates stored credentials for retailer
 /// <ul>
 ///   <li>
@@ -361,7 +360,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 ///
 - (NSString * _Nonnull)grabNewOrders:(Account * _Nonnull)account dayCutoff:(double)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, NSString * _Nonnull, UIViewController * _Nullable, NSError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, open) {
@@ -446,6 +444,7 @@ typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerDrizly = 10934,
   RetailerAmazonCABeta = 12099,
   RetailerAmazonESBeta = 12686,
+  RetailerAmazonDEBeta = 12687,
   RetailerAmazonFRBeta = 12688,
   RetailerSheinES = 12691,
   RetailerPcExpress = 12749,
@@ -800,7 +799,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 ///
 - (void)updateConfiguration:(NSData * _Nonnull)data;
 - (void)cancelSessionWithIdentifier:(NSString * _Nonnull)identifier;
-- (void)sync;
 /// It validates stored credentials for retailer
 /// <ul>
 ///   <li>
@@ -828,7 +826,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 ///
 - (NSString * _Nonnull)grabNewOrders:(Account * _Nonnull)account dayCutoff:(double)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, NSString * _Nonnull, UIViewController * _Nullable, NSError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, open) {
@@ -913,6 +910,7 @@ typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerDrizly = 10934,
   RetailerAmazonCABeta = 12099,
   RetailerAmazonESBeta = 12686,
+  RetailerAmazonDEBeta = 12687,
   RetailerAmazonFRBeta = 12688,
   RetailerSheinES = 12691,
   RetailerPcExpress = 12749,

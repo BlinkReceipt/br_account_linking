@@ -1,5 +1,11 @@
 # Change Log
 
+## 2.10.0
+* Stability improvements
+* `Amazon (Germany)`
+    * Added merchant support
+
+---
 ## 2.9.0
 * Stability improvements
 
