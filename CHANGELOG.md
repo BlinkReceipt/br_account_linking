@@ -1,5 +1,29 @@
 # Change Log
 
+## 2.11.0
+* `Home Depot`, `Target`, `Publix`, `Walmart`, `H-E-B`, `Doordash`, `Shoprite`, `BJ's Wholesale Club`, `Amazon`
+    * Improved user authentication
+* `Lowe's`
+    * Fixed an issues that prevented fetching of some orders
+* `Macy's`
+    * Improved user authentication on Android
+* `Ulta`, `Chewy`, `Kohl's`, `Shipt`, `Kroger`, `Food 4 Less`, `Fred Meyer`, `Harris Teeter`, `Ralphs`
+    * Improved user authention and orders fetching
+* `Target`, `Best Buy`, `Dollar Tree`, `Food Lion`, `Staples`, `Shoprite`, `Walmart`
+    * Improved `purchaseType`
+* `Walmart`
+    * Fixed missing payment amount
+* `Staples`
+    * Improved 2FA/Captcha flow
+* `Acme Markets`, `Albertsons`, `Amazon`, `BestBuy`, `BJ's Wholesale Club`, `Chewy`, `Costco`, `CVS`,
+`Dick's Sporting Goods`, `Dollar Tree`, `Doordash`, `Family Dollar`, `Food Lion`, `GrubHub`, `Harris Teeter`,
+`Home Depot`, `Instacart`, `Jewel Osco`, `Kohls`, `Kroger`, `Macy's` , `Safeway`,
+`Sams Club`, `Sephora`, `Shipt`, `ShopRite`, `Staples`, `Target`, `Vons`, `Walgreens`, `Walmart`
+    * Improved `BRPaymentMethod` `method` and `cardType` values
+* `Amazon (Australia)`
+    * Added merchant support
+
+---
 ## 2.10.0
 * Stability improvements
 * `Amazon (Germany)`

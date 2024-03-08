@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AccountLinking
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import AccountLinking
@@ -9,6 +9,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public enum AccountLinkingViewMode : Swift.Int {
   case automatic = -100
   case userAuth = 1
@@ -94,6 +95,7 @@ import _StringProcessing
   case aliexpress = 12849
   case uberEatsUK = 12850
   case shein = 12882
+  case amazonAUBeta = 12948
   case postmates = 19671
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -135,6 +137,8 @@ import _StringProcessing
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class AuthorizationViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @objc deinit
 }
 extension AccountLinking.AccountLinkingViewMode : Swift.Equatable {}

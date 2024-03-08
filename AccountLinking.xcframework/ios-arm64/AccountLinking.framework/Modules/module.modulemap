@@ -1,7 +1,7 @@
 framework module AccountLinking {
   umbrella header "AccountLinking.h"
-
   export *
+
   module * { export * }
 }
 
