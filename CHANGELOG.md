@@ -1,5 +1,11 @@
 # Change Log
 
+## 2.90.0
+* Added support for `Retailer Webview Authentication`
+* Added general optimizations and stability improvements
+* Added PrivacyInfo
+
+---
 ## 2.11.0
 * `Home Depot`, `Target`, `Publix`, `Walmart`, `H-E-B`, `Doordash`, `Shoprite`, `BJ's Wholesale Club`, `Amazon`
     * Improved user authentication

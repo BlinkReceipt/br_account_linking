@@ -310,12 +310,12 @@ SWIFT_CLASS("_TtC14AccountLinking7Account")
 @property (nonatomic, copy) NSString * _Nonnull password;
 @property (nonatomic, copy) NSString * _Nonnull countryCode;
 @property (nonatomic) BOOL returnLatestOrdersOnly;
+@property (nonatomic) BOOL webviewAuthEnabled;
 - (nonnull instancetype)initWithRetailer:(enum Retailer)retailer username:(NSString * _Nonnull)username password:(NSString * _Nonnull)password countryCode:(NSString * _Nonnull)countryCode OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-enum AccountLinkingViewMode : NSInteger;
 @class NSData;
 @class UIViewController;
 @class NSError;
@@ -333,7 +333,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 @property (nonatomic, copy) void (^ _Nullable logMessage)(NSString * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable logs)(id _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable displayDebugView)(id _Nullable);
-@property (nonatomic) enum AccountLinkingViewMode viewMode;
 @property (nonatomic, readonly, copy) NSString * _Nonnull version;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -378,11 +377,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 - (NSString * _Nonnull)grabNewOrders:(Account * _Nonnull)account dayCutoff:(double)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, NSString * _Nonnull, UIViewController * _Nullable, NSError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 @end
 
-
-typedef SWIFT_ENUM(NSInteger, AccountLinkingViewMode, open) {
-  AccountLinkingViewModeAutomatic = -100,
-  AccountLinkingViewModeUserAuth = 1,
-};
 
 @class NSCoder;
 @class NSBundle;
@@ -445,11 +439,13 @@ typedef SWIFT_ENUM(NSInteger, Retailer, open) {
   RetailerStaplesCA = 6127,
   RetailerDicksSportingGoods = 6162,
   RetailerGap = 6457,
-  RetailerMacys = 6802,
   RetailerStarbucks = 6677,
+  RetailerMacys = 6802,
+  RetailerColes = 7610,
   RetailerDominosPizza = 8366,
   RetailerTacoBell = 8598,
   RetailerAmazonBeta = 8643,
+  RetailerWoolworths = 8646,
   RetailerInstacart = 8652,
   RetailerUlta = 8662,
   RetailerNike = 8712,
