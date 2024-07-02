@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.90.7
+* Fixed invalid privacy manifest error when submitting to App Store
+* Added general optimizations and stability improvements
+
+---
 ## 2.90.0
 * Added support for `Retailer Webview Authentication`
 * Added general optimizations and stability improvements
