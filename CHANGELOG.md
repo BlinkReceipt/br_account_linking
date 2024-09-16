@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.90.30
+* Increased minimum target to iOS13
+* Parsing updates
+
+---
 ## 2.90.7
 * Fixed invalid privacy manifest error when submitting to App Store
 * Added general optimizations and stability improvements

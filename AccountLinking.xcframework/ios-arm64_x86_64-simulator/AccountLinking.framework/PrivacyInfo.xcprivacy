@@ -29,8 +29,6 @@
 			</array>
 		</dict>
 		<dict>
-			<key>New item</key>
-			<string></string>
 			<key>NSPrivacyCollectedDataType</key>
 			<string>NSPrivacyCollectedDataTypeEmailsOrTextMessages</string>
 			<key>NSPrivacyCollectedDataTypeLinked</key>
