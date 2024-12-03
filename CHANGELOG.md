@@ -1,5 +1,9 @@
 # Change Log
 
+## 3.0.0
+* Parsing updates
+
+---
 ## 2.90.30
 * Increased minimum target to iOS13
 * Parsing updates

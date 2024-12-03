@@ -126,8 +126,8 @@ import _SwiftConcurrencyShims
   @objc public func removeUserDataForRetailer(_ retailer: AccountLinking.Retailer, completion: @escaping () -> Swift.Void)
   @objc public func updateConfiguration(_ data: Foundation.Data?)
   @objc public func cancelSessionWithIdentifier(_ identifier: Swift.String)
-  @objc public func verifyAccount(_ account: AccountLinking.Account, completion: @escaping (_ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void) -> Swift.String
-  @objc public func grabNewOrders(_ account: AccountLinking.Account, dayCutoff: Swift.Double, completion: @escaping (_ orders: [[Swift.AnyHashable : Any]], _ remaining: Swift.Int, _ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void) -> Swift.String
+  @objc public func verifyAccount(_ account: AccountLinking.Account, metadata: @escaping (_ data: [Swift.String : Any]?) -> Swift.Void, completion: @escaping (_ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void) -> Swift.String
+  @objc public func grabNewOrders(_ account: AccountLinking.Account, dayCutoff: Swift.Double, metadata: @escaping (_ data: [Swift.String : Any]?) -> Swift.Void, completion: @escaping (_ orders: [[Swift.AnyHashable : Any]], _ remaining: Swift.Int, _ uuid: Swift.String, _ authViewController: UIKit.UIViewController?, _ error: Foundation.NSError?) -> Swift.Void) -> Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class AuthorizationViewController : UIKit.UIViewController {

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                  = "AccountLinking"
-  s.version               = "2.90.30"
+  s.version               = "3.0.0"
   s.summary               = "AccountLinking SDK"
   s.homepage              = "https://github.com/BlinkReceipt/br_account_linking"
   s.license               = { :type => "MIT", :file => "LICENSE" }
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks   = ["AccountLinking.xcframework"]
   s.user_target_xcconfig = { 'ACCOUNTLINKING_VERSION' => s.version }
   s.description = <<-DESC
-    This is an extension for the BlinkReceipt SDK
+    This is an extension for the BlinkEReceipt SDK
   DESC
 end

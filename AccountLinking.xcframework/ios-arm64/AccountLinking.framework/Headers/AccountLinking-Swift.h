@@ -360,7 +360,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 ///
 /// \param completion A callback to get results or provide additional user input if required
 ///
-- (NSString * _Nonnull)verifyAccount:(Account * _Nonnull)account completion:(void (^ _Nonnull)(NSString * _Nonnull, UIViewController * _Nullable, NSError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)verifyAccount:(Account * _Nonnull)account metadata:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable))metadata completion:(void (^ _Nonnull)(NSString * _Nonnull, UIViewController * _Nullable, NSError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 /// It fetches new orders for the specific time range for a retailer
 /// <ul>
 ///   <li>
@@ -374,7 +374,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AccountLinki
 ///
 /// \param completion A callback to get results or provide additional user input if required
 ///
-- (NSString * _Nonnull)grabNewOrders:(Account * _Nonnull)account dayCutoff:(double)dayCutoff completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, NSString * _Nonnull, UIViewController * _Nullable, NSError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)grabNewOrders:(Account * _Nonnull)account dayCutoff:(double)dayCutoff metadata:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable))metadata completion:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull, NSInteger, NSString * _Nonnull, UIViewController * _Nullable, NSError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
