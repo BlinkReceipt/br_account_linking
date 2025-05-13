@@ -71,6 +71,7 @@ import _SwiftConcurrencyShims
   case nike = 8712
   case shipt = 9016
   case uberEats = 9137
+  case thriveMarket = 9416
   case chewy = 9947
   case seamless = 10068
   case amazonUKBeta = 10078
