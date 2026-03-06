@@ -1,5 +1,9 @@
 # Change Log
 
+## 3.1.4
+* Parsing updates
+
+---
 ## 3.0.51
 * Parsing updates
 
