@@ -1,5 +1,16 @@
 # Change Log
 
+## 3.1.12
+
+* Increased minimum supported iOS version to iOS 15
+* General extraction improvements for Asda, Grubhub, Home Depot 
+* Improved authentication handling for Seamless, ShopRite, Food Lion and AliExpress.
+* Amazon: updated date handling to pass date as a string
+* Enhancements to login and verification flows
+* Performance and reliability improvements
+* Improved compatibility across supported merchants
+
+---
 ## 3.1.4
 * Parsing updates
 
