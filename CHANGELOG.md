@@ -1,5 +1,10 @@
 # Change Log
 
+## 3.1.16
+
+* Walmart Authentication Improvements
+	* Included updates to improve Walmart authentication reliability
+
 ## 3.1.12
 
 * Increased minimum supported iOS version to iOS 15
