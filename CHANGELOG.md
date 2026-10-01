@@ -1,5 +1,13 @@
 # Change Log
 
+## 3.1.32
+
+* Universal link guard for retailer sign in
+	* Cross host redirects during sign in stay inside the SDK web view instead of opening the retailer's installed app. Fixes Costco linking on devices with the Costco app installed, where the flow stopped on a spinner after Sign In.
+	* The guard can be turned off per retailer over the air, without a new SDK release.
+* Podspec deployment target raised to iOS 15.0 to match the framework
+* Bundled retailer scripts refreshed to the current over the air set
+
 ## 3.1.16
 
 * Walmart Authentication Improvements
