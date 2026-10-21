@@ -1,5 +1,14 @@
 # Change Log
 
+## 3.1.33
+
+* Background collection in hosts without UIScene support
+	* The SDK's hidden web view no longer joins the host app's scene, so its page keeps running while the app is in the background instead of stopping 2 to 5 s after the app leaves the foreground. Needs the BlinkEReceipt release that keeps the background refresh task alive.
+	* Messages a page sends after its action has ended are ignored and no longer change the session result.
+* No sign in with stored credentials in the background
+	* When an action that started in the background reaches the retailer's sign in page, the SDK no longer types the stored credentials. The action ends as an authentication failure (1010), so the account is marked for re-authentication and the host can ask the user to reconnect. Actions started in the foreground are unchanged.
+* Bundled retailer scripts refreshed to the current over the air set (2026.10.4): Kroger and Starbucks (2026.10.1), Amazon and Chewy (2026.10.2), the Walmart identity-flow, passkey and expired-session fixes (2026.10.3, PUR-2362) and the Publix MFA page handling (2026.10.4, PUR-2555)
+
 ## 3.1.32
 
 * Universal link guard for retailer sign in
